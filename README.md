@@ -40,7 +40,7 @@ c/c++ &amp; iot class
 ## 2024-02-23
     ---
 
-- 데이터 조작어 검색
+- 데이터 조작어 검색(p.149-p.164)
      1. select 문법 : select (속성이름) from (테이블이동) where (검색조건)
      2. where 조건 : between, and, or, in, not in, like, '%', '__구%', 'order by', 'desc', 'asc'
 
