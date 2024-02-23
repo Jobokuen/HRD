@@ -11,15 +11,13 @@ c/c++ &amp; iot class
 - ubuntu  한글 설정
 - VsCode 설치
 - git 설치
- '''shell
-sudo su 
-git clone https://github.com/Jobokuen/HRD.git
-'''
+- sudo su 
+- git clone https://github.com/Jobokuen/HRD.git
 
  - window : install mysql workbench & community
  - rinux
-    - '''shell sudo apt install mysql-serber'''
-    - '''shell sudo snap install mysql-workbench-community'''
+    - '''sudo apt install mysql-serber'''
+    - '''sudo snap install mysql-workbench-community'''
 - rinux code
     ''' sudo mysql -u root -p'''
 
@@ -37,3 +35,15 @@ git clone https://github.com/Jobokuen/HRD.git
     - 유저만들어서 권한설정
         - grant all privileges on. to 'root'@'localhost'identified by '1234'
     - windows cli 에서 textDB 생성
+
+    ---
+## 2024-02-23
+    ---
+
+- 데이터 조작어 검색
+     1. select 문법 : select (속성이름) from (테이블이동) where (검색조건)
+     2. where 조건 : between, and, or, in, not in, like, '%', '__구%', 'order by', 'desc', 'asc'
+
+- DDL : 테이블 구조     : create  /  drop
+- DML : 테이블 데이터   : insert  / delete  / select
+- DCL : 데이터 제어어   :  grant  / revoke
