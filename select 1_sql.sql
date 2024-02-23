@@ -62,5 +62,11 @@ select sum(saleprice) 총판매액, avg(saleprice) 평균, min(saleprice) 최소
 
 -- example 3-18
 select count(*) from Orders;
+select count(*) from Customer;
+select count(phone) from Customer;
 
 -- example 3-19
+select custid, count(*), sum(saleprice) from Orders group by custid;
+
+-- example 3-20
+select custid, count(*) from Orders where saleprice >= 8000 group by custid having count(*) >= 2;
