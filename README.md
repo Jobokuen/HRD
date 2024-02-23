@@ -47,3 +47,22 @@ c/c++ &amp; iot class
 - DDL : 테이블 구조     : create  /  drop
 - DML : 테이블 데이터   : insert  / delete  / select
 - DCL : 데이터 제어어   :  grant  / revoke
+
+- - 데이터베이스 모델
+ -> relation = table
+
+ - 키(속성)
+   - 슈퍼키(후보키(기본키))
+   - 기본키(PK) : 중복x , Nudll X 
+   - 외래키(FK)
+
+- 무결성
+  - 도메인 무결성
+    - 도메인을 int 라 하였을 때 튜플의 값은 int여야 한다
+  - 개체 무결성
+    - PK가 NULL이면 안되고 하나만 있어야 한다.
+  - 참조 무결성
+    - FK, 자식릴레이션과 부모 릴레이션이 제약을 받는다
+
+- 관계대수
+ - 관계대수 연산자(p.96)
