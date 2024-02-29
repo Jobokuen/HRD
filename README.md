@@ -88,9 +88,9 @@ c/c++ &amp; iot class
       - 제외하고 싶은 file를 설정할 수 있다.
 
     - Makefile 관련 명령어
-     - touch Makefile       : Makefile 제작
-     - make                 : Makefile 실행
-     - make clean           : Makefile clean 설정 실행
-     - TARGET = ''          : TARGET 설정
-     - ${TARGET}            : TARGET 대체 내용 삽입
-     - circle: $@           : circle.c
+      - touch Makefile       : Makefile 제작
+      - make                 : Makefile 실행
+      - make clean           : Makefile clean 설정 실행
+      - TARGET = ''          : TARGET 설정
+      - ${TARGET}            : TARGET 대체 내용 삽입
+      - circle: $@           : circle.c
