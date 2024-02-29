@@ -151,3 +151,62 @@ c/c++ &amp; iot class
       - TARGET = ''          : TARGET 설정
       - ${TARGET}            : TARGET 대체 내용 삽입
       - circle: $@           : circle.c
+- 집계함수와 GROUP BY
+  -집계함수
+    -테이블의 각 열에 대해 계산하는 함수
+        - sum, avg, count, max, min
+  
+  -GROUP BY
+    - 속성값이 같은 값끼리 그룹을 만듦
+    - HAVING
+        -그룹을 제한하는 역할
+    - 실행순서
+        - SELECT > FROM > WHERE > GROUP BY > HAVING(집계함수)
+
+- 두 개 이상의 테이블을 이용한 SQL 질의의
+
+  - JOIN
+    - 두 개 이상의 테이블을 결합하는 연산
+        - FROM A, B, WHERE Pk = Fk (NULL X)
+        - FROM A INNER JOIN B ON Pk = Fk
+    - 아무런 조건 없이 SELECT > 관계대수의 카티션 프로덕트 연산
+    - 특정 값으로 보기 위해 ORDER BY절 이용하여 정렬
+    - 외부조인(outer join)
+        - INNER JOIN(default) (NULL X) OUTER JOIN (NULL 0)
+        - LEFT OUTER JOIN  /  RIGHT OUTER JOIN :관련 NULL을 제외할 수 있는 경우
+
+  - 부속질의
+    - 질의가 중첩되어 있다
+    - WHERE 절에 SELECT문을 사용
+        -ex) WHERE price = (SELECT max(price) FROM Book)
+    - 상관부속질의
+      - 부속질의 간에 상하관계가 있음
+      - 상위 부속질의와 하위 부속질의가 독립적이지 않고 서로 관련을 맺고 있음
+    
+  - DDL(Data Definition Languate)
+    - create문
+
+  - DCL(Data Control Language)
+    - insert문
+    - update문
+    - delete문
+
+- SQL 내장함수
+    - 상수나 속성 이름을 입력 값으로 받아 단일 값을 결과로 반환함
+    - 모든 내장 함수는 사용될 때 유효한 입력 값을 받아야 함
+    - SELECT절과 WHERE절 UPDATE절 등에서 모두 사용 가능
+    - 주요내장함수
+        - 단일행 함수(숫자, 문자, 날짜, 시간, 변환, 정보, NULL관련)
+        - 집계함수
+        - 윈도함수
+
+  - 숫자함수
+     - ABS, CEIL, FLOOR, ROUND, LOG, POWER, SQRT, SIGN
+  
+  - 문자함수
+    - CONCAT, LOWER, LPAD, REPLACE, RPAD, SUBSTR, TRIM, UPPER, ASC||, LENGTH, CHAR_LENGTH
+  
+  - 날짜 시간함수
+    - STR_TO_DATE, DATE_FORMAT, ADDDATE, DATE, DATEDIFF, SYSDATE
+    - format의 주요 지정자
+      - %d, %m, %Y

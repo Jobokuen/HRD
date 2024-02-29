@@ -17,3 +17,12 @@ select bookname '제목', char_length(bookname) '문자수',length(bookname)'바
 from Book where publisher like '굿스포츠';
 
 -- 4-6 example
+select substr(name,1,1),count(*) from Customer group by substr(sname,1,1);
+
+-- 4-7 example
+select orderid,orderdate,adddate(orderdate, interval 10 day) from Orders;
+
+-- 4-8 example
+select orderid,date_format(orderdate,'%Y-%m-%d')'주문일',custid,bookid
+from Orders
+where orderdate = STR_TO_DATE('20240707','%Y%m%d');
