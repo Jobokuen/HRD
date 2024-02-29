@@ -75,6 +75,39 @@ c/c++ &amp; iot class
 
  - 
 
+
+    ---
+## 2024-02-28
+    ---
+    - 주석문 안에 주석문을 사용할 수 없다
+
+-  반복(loop)
+  - 초기화            :  반복문이 실행되기 전에 실행
+  - 조건 체크하는 부분 : 조건 확인하는 부분
+  - 목적부분          : 변화하는 부분
+
+  -명령문
+    - while
+      ex) 1부터 10까지 중 짝수의 합
+          int i = 1 ;
+          int sum ;
+          while(1 <= 10){
+            sum = sum + i;
+            i = i + 2;}
+          printf("%d",sum); 
+    - for
+          int sum;
+          for(int = 1 ; 1 <= 10 ; ++i>){
+            sum = sum + i;
+          }
+          printf("%d",sum);
+    - do_while
+
+  - 배열(array)  vs 변수
+    - 메모리상에 연속적으로 존재하는 같은 자료형의 data들
+      - 같은 형으로 존재(int 중 double X)
+
+
     ---
 ## 2024-02-29
     ---
