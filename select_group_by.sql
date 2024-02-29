@@ -69,4 +69,10 @@ where custid in(select custid
 								from Book 
                                 where publisher="대한미디어")
 				);
-
+                
+-- 3-31 example
+select b1.bookname
+from Book b1
+where price > (select avg(price) 
+				from Book b2
+                where publisher = publisher;
