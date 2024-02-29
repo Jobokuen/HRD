@@ -29,3 +29,26 @@ where Customer.custid=Orders.custid;
 select * from Customer, Orders
 where Customer.custid=Orders.custid
 order by Customer.custid;
+
+-- 3-23 example
+select name, saleprice from Customer, Orders where Customer.custid=Orders.custid;
+
+-- 3-24 example
+select name, sum(saleprice) from Customer, Orders where Customer.custid=Orders.custid
+group by Customer.name order by Customer.name;
+
+-- 3-25 example
+select Customer.name, Book.bookname From Customer, Book, Orders
+where Customer.custid=Orders.custid and Orders.bookid=Book.bookid;
+
+-- 3-26 example
+select Customer.name, Book.bookname from Customer, Book, Orders
+where Customer.custid=Orders.custid and Orders.bookid=Book.bookid and Book.price=20000;
+
+-- 3-27 example
+select Customer.name, Orders.saleprice
+from Customer left outer join Orders on Customer.custid=Orders.custid;
+
+-- NULL 값 X
+select Customer.name, Orders.saleprice
+from Customer ,Orders where Customer.custid=Orders.custid;
