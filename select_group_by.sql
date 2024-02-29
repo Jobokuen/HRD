@@ -52,3 +52,21 @@ from Customer left outer join Orders on Customer.custid=Orders.custid;
 -- NULL 값 X
 select Customer.name, Orders.saleprice
 from Customer ,Orders where Customer.custid=Orders.custid;
+
+-- 3-28 example
+select bookname from Book where price = (select max(price) from Book where price<15000);
+
+-- 3-29 example
+select name from Customer
+where custid in(
+	select custid From Orders);
+    
+-- 3-30 example
+select name from Customer
+where custid in(select custid 
+				from Orders 
+                where bookid in(select bookid 
+								from Book 
+                                where publisher="대한미디어")
+				);
+
