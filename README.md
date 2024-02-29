@@ -74,3 +74,21 @@ c/c++ &amp; iot class
  - 관계대수 연산자(p.96)
 
  - 
+
+    ---
+## 2024-02-29
+    ---
+
+  - make 명령어
+    - Makefile
+      - 한 번에 실행하고자 하는 명령어 파일
+      - 여러 파일을 연쇄적으로 컴파일 하고자 할 때 사용
+      - 변수를 사용하는 것이 가능
+        - TAGET, "${TAGET}"
+      - 제외하고 싶은 file를 설정할 수 있다.
+
+    - Makefile 관련 명령어
+     - touch Makefile       : Makefile 제작
+     - make                 : Makefile 실행
+     - make clean           : Makefile clean 설정 실행
+     
