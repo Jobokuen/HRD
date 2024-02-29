@@ -73,6 +73,18 @@ where custid in(select custid
 -- 3-31 example
 select b1.bookname
 from Book b1
-where price > (select avg(price) 
+where b1.price > (select avg(b2.price) 
 				from Book b2
-                where publisher = publisher;
+                where b2.publisher = b1.publisher);
+
+-- 3-32 example
+select name from Customer where address like '대한민국%'
+UNION all
+select name from Customer where custid in (select custid
+											from Orders);
+                                            
+-- 3-33 example
+select name, address from Customer cs where exists(
+	select *
+    from Orders od
+    where cs.custid=od.custid);
