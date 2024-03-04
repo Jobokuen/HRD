@@ -96,8 +96,25 @@ c/c++ &amp; iot class
         - %% (% 두 개로 사용)
 
       - 증감(incrementor, decrementor)
-        - ++, --
+        - ++, -- : 정수연산, 정수형 변수(상수, double X)
+            a + b : 이항연산자
+            ++100 : 단항연산자
+        - + : 기계어로 변환시 > ADD
+        - ++: 기계어로 변환시 > INCRES
+          ex) int a = 1;
+              ++a;        // a = 2
+              int a = 1;
+              a++;        // a = 2
 
+              int a = 1;
+              int b = ++a;  // a = 2, b = 2
+              int a = 1;
+              int b = a++;  // a = 2, b = 1
+
+            --> 식(expression)은 실행시간에 평가되면 하나의 결과값을 가진다
+
+        - 치환(assigment) : =
+          -  상수값을 왼쪽에 쓸 수 없다.
 
     ---
 ## 2024-02-27
