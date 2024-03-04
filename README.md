@@ -76,6 +76,30 @@ c/c++ &amp; iot class
  - 
 
     ---
+## 2024-02-26
+    ---
+
+- C 언어 연산자
+  - 연산자(operater)
+      - 산술(arithmetic) : +. -, *, /, %(나머지연산자)
+        ex) 1(int)+2(int) = 3(int)    1.0(double)+2.0(double) = 3.0(double)
+            1(int)+2.0(double) => (int->double) = 3.0(double)
+            5(int)/9(int) = 0     5.0(double)/9.0(double) = 0.555---6
+
+      - %(정수형연산자)
+      ex) 1%3 = 1
+      - 똑같은 수열
+      - 주사위 패턴
+        - int num = ?
+        - int result = num % 6 + 1;     // (0,1,2,3,4,5,) + 1 = 1,2,3,4,5,6
+      - 형식지정자 중복
+        - %% (% 두 개로 사용)
+
+      - 증감(incrementor, decrementor)
+        - ++, --
+
+
+    ---
 ## 2024-02-27
     ---
 
