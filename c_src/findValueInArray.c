@@ -17,7 +17,7 @@ int main(void)
 		}*/
 	}
 		
-	if (i < 10){
+	if (i != 10){
 		printf("%d is found: index : %d\n", value, i); 	//found
 	}else{
 		printf("%d is not found\n", value);				//not found
