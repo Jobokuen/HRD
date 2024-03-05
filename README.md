@@ -323,3 +323,15 @@ c/c++ &amp; iot class
     int re = (*fp)(4,3);      // re == 7
     fp &substract;
     int re = (*fp)(5,3)       // re == 2
+
+- void 포인터
+  - 포괄형(generic) pointer
+  - 순수하게 주소 값을 저장하는 용도
+    int a = 100;        double d = 3.4;
+    void *p;            void *p;
+    p = &a;  // (int)   p = %d;   // (double)
+  - 역 참조를 할 수 없다.
+      - 타임캐스팅 이후에 역 참조를 한다.
+      *(int*)p = 200;     *(double*) = 2.718;
+
+-
