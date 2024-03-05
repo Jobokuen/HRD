@@ -267,3 +267,59 @@ c/c++ &amp; iot class
     - STR_TO_DATE, DATE_FORMAT, ADDDATE, DATE, DATEDIFF, SYSDATE
     - format의 주요 지정자
       - %d, %m, %Y
+    ---
+## 2024-03-05
+    ---
+- 다차원 배열
+  - 2차원배열(array of array)
+    - int m[3][4];
+      - m: m[0][0] m[0][1]m[0][2]m[0][3]
+           m[1][0] m[1][1]m[1][2]m[1][3]
+           m[2][0] m[2][1]m[2][2]m[2][3]
+
+- 포인터(pointer)
+  - 주소 값을 저장하는 변수(중요)
+  - 포인터는 반드시 대상을 가리키고 역 참조해야 한다.
+  - * (포인터) : 포인터가 가리키는 대상(역참조(deferemce))
+  - & (변수)   : 변수에 '시작' 주소 값.
+    int a;
+    int *p;
+    a = 100;
+    p = &a;
+    *p = 200;
+    printf("%d",a);   // a == 200
+
+  - int *   vs  char *
+    - 포인터가 가리키는 대상의 타입
+       int a = 0x12345678;
+       char *p;
+       p = &a;
+       printf("%x",*p)    // p == 12(big-endian) or p == 78(little-endian)
+
+- 다중포인터
+  - 이중포인터 : 단일포인터를 가리키는 포인터
+    int a;
+    int *pa;
+    int **ppa;
+    a = 100;
+    pa = &pa;
+    **ppa = 200;
+    printf("%d",a);   // a == 200
+  - 이중포인터에 주된 용도는 단일포인터를 element로 쓰는 경우이다.
+  - 이차원 배열과 관린여 없다.
+
+- 함수포인터
+ - 특정 연산을 실행 시킬 수 있다.
+    int add(int a, int b)
+    {
+      return a+b;
+    }
+    int substract(int a, int b)
+    {
+      return a-b;
+    }
+    int (*fp)(int,int);
+    fp = &add;
+    int re = (*fp)(4,3);      // re == 7
+    fp &substract;
+    int re = (*fp)(5,3)       // re == 2
