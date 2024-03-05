@@ -17,6 +17,17 @@ int main(void)
 	}
 	printf("\n");
 	
+/*	for(int 1 =0; i<7;){
+		lotto[i] = rand() % 45 +1;
+	
+		int j;
+		for(j = 0; j<i;++j){
+			if(lotto[i] == lotto[j]){
+				break;
+			}
+		}
+	}
+*/
 	
 	int match = 0;
 	int nums[6] = {0};
@@ -27,20 +38,24 @@ int main(void)
 	for(int i = 0; i<6; ++i){
 		scanf("%d",&nums[i]);}
 		
-	printf("input bouns number ");
+	printf("\ninput bouns number ");
 	scanf("%d",&bouns[1]);
-		
-	for(int i = 0; i<6 ; ++i){
-		for(int j = i; j<6 ; ++j){
+
+
+	for(int i = 0; i<6; ++i){
+		for(int j = i; j<6; ++j){
 			if(lotto[i] == nums[j]){
-			++match;}
+				++match;
+			}
 		}
 	}
+
+
 
 	if(match ==6){
 		printf("first");
 	}else if(match == 5){
-		if(lotto[7] == bouns[1]){
+		if(lotto[7] == bouns[0]){
 			printf("second");
 		}else{
 			printf("third");}
