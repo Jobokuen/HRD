@@ -154,7 +154,7 @@ c/c++ &amp; iot class
     ---
 ## 2024-02-28
     ---
-    - 주석문 안에 주석문을 사용할 수 없다
+  - 주석문 안에 주석문을 사용할 수 없다
 
 -  반복(loop)
   - 초기화            :  반복문이 실행되기 전에 실행
@@ -182,13 +182,13 @@ c/c++ &amp; iot class
     - 메모리상에 연속적으로 존재하는 같은 자료형의 data들
       - 같은 형으로 존재(int 중 double X)
 
-    int num;
-    int nums[5];          // 배열의 크기는 [0 ~ 4] -> [0 ~ n-1]
+     int num;
+     int nums[5];          // 배열의 크기는 [0 ~ 4] -> [0 ~ n-1]
     
-    num = 100;
-    nums[0] = 100;        // 첫 번째 index는 0임
-    nums[1] = 200;
-    nums[4] = nums[1];
+     num = 100;
+     nums[0] = 100;        // 첫 번째 index는 0임
+     nums[1] = 200;
+     nums[4] = nums[1];
     ---
 ## 2024-02-29
     ---
@@ -269,7 +269,7 @@ c/c++ &amp; iot class
       - %d, %m, %Y
     ---
 ## 2024-03-05
-    ---
+
 - 다차원 배열
   - 2차원배열(array of array)
     - int m[3][4];
@@ -345,8 +345,9 @@ c/c++ &amp; iot class
 
     ---
 ## 2024-03-05
-    ---
-    - 인자전달, 변수의 종류, c파일을 헤더파일로 분리.
+--- 프로세스 구성 및 stack 영역 그림 경우 C.hwp - p.24 참조
+
+- 인자전달, 변수의 종류, c파일을 헤더파일로 분리.
 
     - 함수의 인자로 포인터를 쓰는 이유
       1. 호출하는 쪽에 있는 변수 값을 호출 당하는 쪽에 바꿔주엉 할 때.(swap2.c)
@@ -362,11 +363,38 @@ c/c++ &amp; iot class
         - 함수 시작할 때 ~ 끝날 때
         - 초기화 X
       - static global var
+        - main함수에 들어가지 않게 할 시 (rand.c)
         - C파일 안에서만 접근 가능
         - 프로그램 시작할 때 ~ 끝날 때
         - 초기화 O
       - static local var
+        - 전역변수인데 특정함수 하나만 사용할 시(serial.c)
         - 특정 함수 안에서 사용 가능
         - 프로그램 시작할 때 ~ 끝날 때
         - 초기화 O
-        
+    
+    - 함수 사용 시
+      - 함수 선언 또는 정의가 되어야 한다.
+      - 함수 선언이 되어있으면 어디선가 함수가 정의되어있다.
+        - 같은 파일 안에 있을 수 있고 다른 파일에 있을 수 있다.
+      
+    - 여러가지 c 파일을 한번에 link하는 방법
+
+      cc -c rand.c
+      cc -c main.c
+      cc -o testRand rand.o main.o
+
+      gedit rand.h                  // 함수선언
+      #include "rand.h"             // "" -> directory 안에 있는 내용
+
+    - 처리단계
+        -  전처리 > (.i) > compile > (object file)s > link > (실행file)
+
+    - .h 파일에 들어가는 코드 : include를 한번만 하기 위해 사용하는 코드
+
+      #ifndef RAND_H        // RAND_H가 정의되어 있지 않으면
+      #define RAND_H 
+      ...
+      #endif
+
+    
