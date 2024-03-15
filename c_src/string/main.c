@@ -1,38 +1,36 @@
-#include<stdio.h>
-//#include<string.h>
-#include"myString.h"
+#include <stdio.h>
+#include <string.h>
+#include "myString.h"
 
-
-int main(void){
-
+int main()
+{
     char str[100];
     char str2[100];
 
-//-------------------------- strsat----------------------
-    my_strcat(str,"abc");                      // append
-    printf("%s\n",str);
-    my_strcat(str,"def");
-    printf("%s\n",str);
-
-//-------------------------- strcmp----------------------
-    printf("%d\n",my_strcmp("abc","def"));     // compare
-    printf("%d\n",my_strcmp("abc","abc"));
-
-//-------------------------- strcpy----------------------
-    my_strcpy(str2, str);                      // copy
-    if(my_strcmp(str, str2) == 0){
-        printf("result of strcmp is same\n");
-    }else{
-        printf("result of strcmp is different\n");
+    printf("Hello, World!\n");
+    // strcat(str, "abc");
+    my_strcat(str, "abc");
+    printf("%s\n", str);
+    // strcat(str, "def");
+    my_strcat(str, "def");
+    printf("%s\n", str);
+    // printf("%s\n", strcat(str, "ghi"));
+    printf("%d\n", my_strcmp("abcde", "abcfe"));
+    // strcpy(str2, str);
+    my_strcpy(str2, str);
+    if (my_strcmp(str, str2) == 0)
+    {
+        printf("두 스트링 변수는 같다.\n");
     }
-
-//-------------------------- strlen----------------------
-    printf("%d\n",my_strlen(str));            //  return length
-    printf("%d\n",my_strlen(str2));
+    else
+    {
+        printf("두 스트링 변수는 다르다.\n");
+    }
+    printf("%d\n", my_strlen(str));
+    printf("%d\n", my_strlen(str2));
     my_strcat(str, str2);
-    printf("%d\n",my_strlen(str));
-    
+    printf("%s\n", str);
+    printf("%d\n", my_strlen(str));
+
     return 0;
-
-
 }
