@@ -344,7 +344,7 @@ c/c++ &amp; iot class
   - 사용자 정의 연산(user defined operator)
 
     ---
-## 2024-03-05
+## 2024-03-06
 --- 프로세스 구성 및 stack 영역 그림 경우 C.hwp - p.24 참조
 
 - 인자전달, 변수의 종류, c파일을 헤더파일로 분리.
@@ -398,3 +398,55 @@ c/c++ &amp; iot class
       #endif
 
     
+## 2024-03-11
+--- 구조체, 문자열
+
+  - 구조체
+    - 사용자 정의 자료형 : user-defined type
+    - 복합형 : compound type
+      - 논리적으로 관련된 data를 compound 하기 위해서
+      - ex. 날짜(년,월,일)
+      - struct date{
+          int year;
+          int month;
+          int day;
+        };
+      - struct date today;    // today |2024|   3|  11|
+
+      - int i = 100;
+        today.year = 2024;          int t_year, t_month, t_day;
+        today.month = 3;            t.year = 2024;
+        today.day = 11;             t.month = 3;
+                                    t. day = 11;
+        temp = today;
+                                    int tewp_year, tewp_month, tewp_day
+                                    t.year = t_year;
+                                    t.month = t_month;
+                                    t.day = t_day;
+
+      - 초기화를 할 때 배열처럼 사용할 수 있다.
+        - struct date birthday = {2024,8,2};
+
+    - 구조체의 정의는 헤더 파일로 한다.
+
+  - 함수의 인자로 포인터를 쓰는 이유
+    - 3. 구조체 자료를 인자로 전달할 때
+      - overhead를 줄이기 위해서
+      - 우선순위 : * < ,
+      // printDate(today);
+      printDate(&today);
+      void printDate(struct date d){
+        printf("%d%d%d"), d.year, d.month, d.day);
+      }
+      -> struct date *pd
+      -> (*pd).year, (*pd).month, (*pd.day)
+      = pd->year, pd->month, pd->day
+    
+    - 4. 사용자 정의 연산을 인자로 전달할 때 함수 포인터를 사용한다.
+    - 5. 임의의 인자를 전달할 때, void*를 사용한다.
+
+  - 문자열(string)
+    - 문자열
+      - c언어에서 마지막 제어문자 \0이 존재한다.
+       char str[] = {'h'}
+      
