@@ -479,7 +479,7 @@ c/c++ &amp; iot class
     - 인터럽트 발생 시
       - 특정 번지(인터럽트 벡터번지_이중벡터)로 이동
 
-  - PWD(Pulse Width Modulation
+  - PWD(Pulse Width Modulation)
     - Duty : 0일 때의 시간과 1일 때의 시간이 다름
     - 파형의 DC 성분이 2.5Vdlek
     - 펄스 폭을 조절하여 DC성분을 바꿀 수 있다.
