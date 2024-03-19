@@ -483,3 +483,32 @@ c/c++ &amp; iot class
     - Duty : 0일 때의 시간과 1일 때의 시간이 다름
     - 파형의 DC 성분이 2.5Vdlek
     - 펄스 폭을 조절하여 DC성분을 바꿀 수 있다.
+
+## 2024-03-19
+--- interrupt(SIGNAL) / keyboard(input)_function_get() : system call 기능 / update file
+
+- doxygen 사용을 통한 문서화 작업
+  - doxywizard 설치
+  - doxygen GUI 설정 
+
+- 게임 환경 만들기
+  - 게임제작
+  - cmake를 통한 buliding
+  - CPack 사용을 통해 배포
+  - 제작 이후 update관리
+
+- 게임제작
+  - 조건에 맞는 파일 배분(main.c, display_*.c, display_tetris.h, update.c)
+
+- cmake를 통한 빌딩
+  - cmake의 최소 버전 지정
+  - src 디렉토리에 있는 파일을 검색 후 컴파일 하여 실행파일을 생성
+  - 빌드된 실행파일을 디렉토리, 헤더파일, 소스파일 설치
+  - setting cpack
+
+- CPack
+  - 표준화된 패키징
+  - 간편한 배포
+  - 의존성 관리
+  - 프로젝트 유지보수의 용의성
+  - 자동화된 빌드 시스템 통합
