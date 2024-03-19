@@ -489,6 +489,10 @@ c/c++ &amp; iot class
 ## 2024-03-19
 --- interrupt(SIGNAL) / keyboard(input)_function_get() : system call 기능 / update file
 
+- doxygen 사용을 통한 문서화 작업
+  - doxywizard 설치
+  - doxygen GUI 설정 
+
 - 게임 환경 만들기
   - 게임제작
   - cmake를 통한 buliding
