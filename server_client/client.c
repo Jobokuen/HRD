@@ -60,12 +60,12 @@ int main(void)
 	servAddr.sin_family = AF_INET;
 	servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");		//loop back address
 	servAddr.sin_port = htons(7777);
-	assert (connect(dataSocket, (struct sockaddr*)&servAddr, sizeof(servAddr)) == 0);
+	assert(connect(dataSocket, (struct sockaddr*)&servAddr, sizeof(servAddr)) == 0);
 
 	
 	pthread_t pId1, pId2;
 	pthread_create(&pId1, NULL, send_msg, &dataSocket);
-	pthread_create(&pId2, NULL, send_msg, &dataSocket);
+	pthread_create(&pId2, NULL, recv_msg, &dataSocket);
 	
 /*	for(;;){
 		;	
