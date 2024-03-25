@@ -26,11 +26,6 @@ void *client_proc(void arg)		// pthread_create
 				write(???, buf, nread);
 			}
 		}	
-
-		
-		if (strcmp(buf, "/quit") == 0 ){
-			break;
-		}
 		
 	}
 	close(dataSocket);

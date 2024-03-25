@@ -14,15 +14,32 @@ void *send_msg(void *arg)
         char buf[1024];
         fgets(buf,1024,stdin);
 
-        if (st)
+        if (strcmp(buf, "/quit\n") == 0 ){
+            break;
+        }
 
         write(dataSocket, buf, strlen(buf)
     }
+    close(dataSocket);
 }
 
 void*recv_msg(void *arg)
 {
+    for(;;){
+        int buf[1024];
+        int nread = read(dataSocket, buf, 1024);
 
+        if(nread == 0){ 
+            break;
+        } else if (nread == -1)
+        {
+            break;
+        } else {
+            printf("%s",buf);
+        }
+        
+
+    }
 }
 
 
@@ -40,8 +57,8 @@ int main(void)
 	// read(dataSocket, ???); / write(dataSocket, ???);
 	
 	pthread_t_pId1, pId2;
-	pthread_create(&pId1, NULL, send_msg, &dataSocket)	
-	pthread_create(&pId2, NULL, send_msg, &dataSocket)
+	pthread_create(&pId1, NULL, send_msg, &dataSocket);
+	pthread_create(&pId2, NULL, send_msg, &dataSocket);
 	
 	for(;;){
 		;	
