@@ -5,6 +5,7 @@
 #include <assert.h>
 #include <arpa/inet.h>
 #include <string.h>
+#include <pthread.h>
 
 #define MAX_USER 100
 
@@ -60,7 +61,7 @@ int main(void)
 	
 	struct sockaddr_in servAddr;
 	servAddr.sin_family = AF_INET;
-	servAddr.sin.s_addr = htonl(INADDR_ANY); //host to network long
+	servAddr.sin_addr.s_addr = htonl(INADDR_ANY); //host to network long
 	servAddr.sin_port = htons(7777);	// host to network short
 	
 	assert((bind(servSocket,(struct sockaddr*)&servAddr, sizeof(servAddr)))
@@ -70,8 +71,9 @@ int main(void)
 		int addrlen;
 		struct sockaddr_in clientAddr;
 		
-		int dataSocket = accept(servSocket, &clientAddr, &addrlen);
-		accsert(dataSocket != -1);
+		int dataSocket = accept(servSocket, (struct sockaddr *)&clientAddr, &addrlen);
+		assert(dataSocket != -1);
+
 pthread_mutex_lock(&mutex);
         dataSockets[numberOfClients] = dataSocket;
         ++numberOfClients;
@@ -87,6 +89,6 @@ pthread_mutex_unlock(&mutex);
 
 	
 	close(servSocket);
-    pthread_mutex_destory(&mutex);
+    pthread_mutex_destroy(&mutex);
 	return 0;
 }

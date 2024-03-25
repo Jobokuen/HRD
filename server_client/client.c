@@ -6,6 +6,7 @@
 #include <string.h>
 #include <pthread.h>
 #include <assert.h>
+#include <pthread.h>
 
 
 void *send_msg(void *arg)
@@ -31,7 +32,7 @@ void*recv_msg(void *arg)
     int dataSocket = *(int *)arg;
 
     for(;;){
-        int buf[1024];
+        char buf[1024];
         int nread = read(dataSocket, buf, 1024);
 
         if(nread == 0){ 
@@ -53,13 +54,13 @@ void*recv_msg(void *arg)
 int main(void)
 {
 	int dataSocket = socket(AF_INET, SOCK_STREAM, 0);
-	assert(dataSocket == 0);
+	assert(dataSocket != -1);
 	
 	struct sockaddr_in servAddr;
 	servAddr.sin_family = AF_INET;
-	servAddr.sin_addr = inet_addr("127.0.0.1");		//loop back address
+	servAddr.sin_addr.s_addr = inet_addr("127.0.0.1");		//loop back address
 	servAddr.sin_port = htons(7777);
-	assert (connect(dataSocket, &servAddr, sizeof(servAddr)) == 0);
+	assert (connect(dataSocket, (struct sockaddr*)&servAddr, sizeof(servAddr)) == 0);
 
 	
 	pthread_t pId1, pId2;
