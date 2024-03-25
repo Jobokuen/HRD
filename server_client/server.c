@@ -1,15 +1,17 @@
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <stdlib.b>
 #include <stdio.h>
 #include <unistd.h>
 #include <assert.h>
 #include <arpa/inet.h>
 #include <string.h>
 
+#define MAX_USER 100
 
+int dataSockets[MAX_USER];
+int numberOfClients;
 
-void *client_proc(void arg)		// pthread_create
+void *client_proc(void *arg)		// pthread_create
 {
 	int dataSocket = *(int *)arg;
 	
@@ -23,11 +25,23 @@ void *client_proc(void arg)		// pthread_create
 		} else {
 			// buf msg ---> all clents!!
 			for(int i = 0; i < numberOfClients; ++i){
-				write(???, buf, nread);
+				write(dataSockets[i], buf, nread);
 			}
 		}	
 		
 	}
+
+    for (int i = 0; i < numberOfClients; ++i){
+        if (dataSocket == dataSockets[i]){
+            for (int j = j; i < numberOfClients-1; ++j){
+                dataSockets[j] = dataSockets[j+1];
+            }
+            break;
+        }
+        
+    }
+    --numberOfClients;
+
 	close(dataSocket);
 	
 	return NULL;
@@ -54,8 +68,11 @@ int main(void)
 		int addrlen;
 		struct sockaddr_in clientAddr;
 		
-		int dataSocket = accept(servSocket, &clientAddr, &addelen);
+		int dataSocket = accept(servSocket, &clientAddr, &addrlen);
 		accsert(dataSocket != -1);
+
+        dataSockets[numberOfClients] = dataSocket;
+        ++numberOfClients;
 
 		printf("client ip: %s\n", inet_ntoa(clientAddr.sin_addr));
 		
