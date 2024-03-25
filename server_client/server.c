@@ -70,14 +70,3 @@ int main(void)
 	close(servSocket);
 	return 0;
 }
-
-//file descriptor = array index
-// AF_INET
-// tcp socket
-
-/* bind_struct
-	struct sockaddr {
-	   sa_family_t sa_family;	-> address type
-	   char        sa_data[14];
-           }
-*/
