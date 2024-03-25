@@ -10,6 +10,8 @@
 
 void *send_msg(void *arg)
 {
+    int dataSocket = *(int *)arg;
+
     for(;;){
         char buf[1024];
         fgets(buf,1024,stdin);
@@ -18,13 +20,16 @@ void *send_msg(void *arg)
             break;
         }
 
-        write(dataSocket, buf, strlen(buf)
+        write(dataSocket, buf, strlen(buf));
     }
     close(dataSocket);
+    return NULL;
 }
 
 void*recv_msg(void *arg)
 {
+    int dataSocket = *(int *)arg;
+
     for(;;){
         int buf[1024];
         int nread = read(dataSocket, buf, 1024);
@@ -35,11 +40,13 @@ void*recv_msg(void *arg)
         {
             break;
         } else {
+            buf[nread] = '\0';
             printf("%s",buf);
         }
         
 
     }
+    return NULL;
 }
 
 
@@ -53,17 +60,18 @@ int main(void)
 	servAddr.sin_addr = inet_addr("127.0.0.1");		//loop back address
 	servAddr.sin_port = htons(7777);
 	assert (connect(dataSocket, &servAddr, sizeof(servAddr)) == 0);
+
 	
-	// read(dataSocket, ???); / write(dataSocket, ???);
-	
-	pthread_t_pId1, pId2;
+	pthread_t pId1, pId2;
 	pthread_create(&pId1, NULL, send_msg, &dataSocket);
 	pthread_create(&pId2, NULL, send_msg, &dataSocket);
 	
-	for(;;){
+/*	for(;;){
 		;	
 	}
-	
-	close(dataSocket);
+*/
+    pthread_join(pId1, NULL);
+    pthread_join(pId2, NULL);
+
 	return 0;
 }

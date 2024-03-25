@@ -1,6 +1,6 @@
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <stdli.b>
+#include <stdlib.b>
 #include <stdio.h>
 #include <unistd.h>
 #include <assert.h>
@@ -38,7 +38,7 @@ int main(void)
 	int servSocket = socket(AF_INET, SOCK_STREAM, 0);			
 	assert(servSocket != -1); // true = access , faulse = stop
 	
-	}
+	
 
 
 	struct sockaddr_in servAddr;
@@ -47,9 +47,9 @@ int main(void)
 	servAddr.sin.s_addr = htonl(INADDR_ANY); //host to network long
 	servAddr.sin_port = htons(7777);	// host to network short
 	
-	assert((bind(servSocket,(struct sockaddr*)&servAddr, sizeof(servAddr))
+	assert((bind(servSocket,(struct sockaddr*)&servAddr, sizeof(servAddr)))
 			!= 0);
-	assert((listen(servSocket, 5 ) != 0);
+	assert((listen(servSocket, 5 ) != 0));
 	for(;;){
 		int addrlen;
 		struct sockaddr_in clientAddr;
