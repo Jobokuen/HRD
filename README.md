@@ -517,5 +517,23 @@ c/c++ &amp; iot class
 
   
   ## 2024-03-26
+--- what is the Linux , C++(cout, cin, using, namespace)
 
+  - Linux
+    - 도움말 : -h / --help
+      - ex) ls -h
+    - rm -rf , mkdir, cc -S ...
+
+    - C++ compile : g++
+      - 실행파일 확인 ls -l 
+      - /usr/bin/ : path 실행
   
+  - Visual Studio Code
+    - build : 빌드작업실행(컴파일 및 빌드)
+      - ex) /usr/bin/g++ -fdiagnostics-color=always -g /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5.cpp -o /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5
+
+  - C++
+    - << 연산자 : operator overloading
+    - std:: > cout, cin 등
+    - using namespace : 주소록
+    - 문자열과 문자 배열 : NULL의 유무
