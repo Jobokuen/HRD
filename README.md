@@ -558,7 +558,9 @@ c/c++ &amp; iot class
     - 전위 후위 차이점
   
   - 관계 연산자 : true,false
-  - 
+  - 조건문 : if, if else, switch-case
+  - 반복문 : while, for, do-while
+    
 
     
     
