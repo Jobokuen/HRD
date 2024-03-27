@@ -517,7 +517,7 @@ c/c++ &amp; iot class
 
   
   ## 2024-03-26
---- what is the Linux , C++(cout, cin, using, namespace)
+--- what is the Linux command , C++(cout, cin, using, namespace)
 
   - Linux
     - 도움말 : -h / --help
@@ -530,7 +530,7 @@ c/c++ &amp; iot class
   
   - Visual Studio Code
     - build : 빌드작업실행(컴파일 및 빌드)
-      - ex) /usr/bin/g++ -fdiagnostics-color=always -g /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5.cpp -o /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5
+      - ex. /usr/bin/g++ -fdiagnostics-color=always -g /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5.cpp -o /home/hrd/hrd/HRD/cpp_src/02_chapter/EX2_5
 
   - C++
     - << 연산자 : operator overloading

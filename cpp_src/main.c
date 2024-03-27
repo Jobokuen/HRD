@@ -3,8 +3,26 @@
 
 
 int main(){
+    int A;
+    int B;
+    int cal(int a, int b);
+    
+    switch ()
+    {
+    case 
+        break;
+    case 
+        break;
+    case 
+        break;
+    case 
+        break;
+    }
+    
+
+    scanf("")
 
 
-    char name[LEN] 
     return 0;
 }
+    
