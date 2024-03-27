@@ -40,7 +40,7 @@ int main(void){
 
     printf("c: %d\n",c);
     printf("d: %d\n",d);
-
     return 0;
 }
+
 
