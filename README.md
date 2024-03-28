@@ -572,5 +572,8 @@ c/c++ &amp; iot class
     - 배열과 반복문
     - 배열의 주소는 시작주소에 해당한다.
     - 배열의 +1은 시작주소의 다음번째 주소에 해당한다.
-    - num = sizeof(score)/sizeof(score[0])
-    -
+    - sizeof(배열명)/sizeof(배열요소)
+      - num = sizeof(score)/sizeof(score[0])
+    - 문자열
+     - 널문자, 문자열, 문자배열
+     - strcpy
