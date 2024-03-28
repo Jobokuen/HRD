@@ -577,3 +577,10 @@ c/c++ &amp; iot class
     - 문자열
      - 널문자, 문자열, 문자배열
      - strcpy
+    - 포인터
+      - 간점 참조 연산자
+      - 주소, 주소 값.
+      - 주소위치에 있는 자료형
+      - MSD : 최상위 비트   LSD : 최하위 비트
+      - little endian / big endian
+      - swap함수
