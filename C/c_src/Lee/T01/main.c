@@ -18,22 +18,24 @@ int main(void){
 }
 int cal(char calculator[],int size){
     int result;
-    char front;
-    char back;
+    char front[] = {0};
+    char back[] = {0};
 
 
     for(int i = 0 ; i < size ; ++i){
         
         if( (calculator[i] == '+') || (calculator[i] == '-') || (calculator[i] == '/') || (calculator[i] == '%')){
+            front[i] = {0};
             for (int j = 0; j < i; j++)         // 계산기 전
             {
-                
+                calculator[j] = front[j];
             }
+            back[i]= {0};
             for (int j = i; i < size; j++)      // 계산기 후
             {
-                
+                calculator[j] = front[j];
             }
-            
+            break;
         }
     }
 
