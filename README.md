@@ -436,7 +436,7 @@ c/c++ &amp; iot class
       // printDate(today);
       printDate(&today);
       void printDate(struct date d){
-        printf("%d%d%d"), d.year, d.month, d.day);
+        printf("%d%d%d", d.year, d.month, d.day);
       }
       -> struct date *pd
       -> (*pd).year, (*pd).month, (*pd.day)
@@ -560,7 +560,7 @@ c/c++ &amp; iot class
   - 관계 연산자 : true,false
   - 조건문 : if, if else, switch-case
   - 반복문 : while, for, do-while
-    - while, for은 어느정도 반복할 횟수가 정해졌느냐에 따라 어떤걸 선택하여 사용할 지를  확인할 수 있다.
+    - while, for은 어느정도 반복할 횟수가 정해졌느냐에 따라 어떤걸 선택하여 사용할 지를 확인할 수 있다.
     
 
   ## 2024-03-27
@@ -584,3 +584,6 @@ c/c++ &amp; iot class
       - MSD : 최상위 비트   LSD : 최하위 비트
       - little endian / big endian
       - swap함수
+
+    ## 2024-03-27
+--- C언어 연습문제풀이
