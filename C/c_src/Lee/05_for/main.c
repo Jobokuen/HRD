@@ -53,6 +53,8 @@
 
 // 중첩 for문
 int main(void){
+
+    
     for (int i = 5; i > 0; --i)
     {
         for (int j = 0 ; j < i ; ++j)
