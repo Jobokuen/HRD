@@ -2,23 +2,30 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-int solution(int a, int b, int c) {
-    int answer = 0;
-    if(a == b && a == c){
-        answer = (a + b + c) * ((a*a)+(b*b)+(c*c)) * ((a*a*a) + (b*b*b) + (c*c*c));
-    }else if (a == b || a == c || b == c)
-    {
-        answer = (a+b+c)*((a*a)+(b*b)+(c*c));
-    }else{
-        answer = a + b + c;
+int main(void) {
+    int numbers[] = {4,8,5,3,1};
+    int temp[] = {0};
+    int N = 0;
+    for(int i = 0 ; i < 5 ; ++i){
+        for (int j = 1; j < i; j++)
+        {
+            temp[N] = numbers[i] * numbers[j];
+            printf("%d\n",temp[N]);
+            ++N;
+        }
+            
     }
-    
-    return answer;
-}
-
-int main(void){
-    int point = 0;
-    point = solution(5,3,3);
-    printf("%d\n",point);
+    int K= 0;
+    while ( K == 4)
+    {
+        if(temp[K] > temp[K+1]){
+            int tempa;
+            tempa = temp[K];
+            temp[K] = temp[K+1];
+            temp[K+1] = tempa;
+        }
+        ++K;
+    }
+    printf("%d",temp[5]);
     return 0;
 }
