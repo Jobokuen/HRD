@@ -50,10 +50,10 @@ int main(void){
     // LG > set channel 10
     // samsung > set channel
     TV samsung(100);
-    TV LG(100);
+    TV LG(10);
 
-    // int result = TV.increaseChannel();
-    // cout << area << end1;
+    LG.increaseChannel();
+    cout << LG.channel << endl;
     
 
     return 0;
