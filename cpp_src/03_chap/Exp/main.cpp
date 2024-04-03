@@ -1,4 +1,4 @@
-#include<iostream>
+
 #include"Exp.h"
 using namespace std;
 
@@ -8,9 +8,10 @@ int main(void){
     Exp c;
 
     cout << a.getValue() << ' ' << b.getValue() << ' ' << c.getValue() << endl;
-    cout << "a의 베이스" << a.getBase() << ',' << "지수" << a.getExp() << endl;
+    cout << "a의 base " << a.getBase() << ',' << "지수" << a.getExp() << endl;
 
-    if (a.equals(Exp b))
+    cout << a.equals(b) << endl;
+    if (a.equals(b))
     {
         cout << "same" << endl;
     }else
@@ -18,4 +19,12 @@ int main(void){
     
     return 0;
     
+}
+
+int pow(int a, int b){
+    int result;
+    for(int i = 1 ; i < b ; ++i){
+        result = result * a;
+    }
+    return result;
 }

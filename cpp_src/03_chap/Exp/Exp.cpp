@@ -1,9 +1,7 @@
-#include<istream>
-#include<cmath>
 #include"Exp.h"
 using namespace std;
 
-Exp::Exp() : Exp(1){}
+Exp::Exp(){};
 
 Exp::Exp(int a){
     num = a , exp = 1;
@@ -17,7 +15,7 @@ int Exp::getValue(){
     int result;
     result = pow(num, exp);
     return result;
-}
+} 
 int Exp::getBase(){
     return num;
 }
@@ -26,7 +24,12 @@ int Exp::getExp(){
     
 }
 
-bool Exp::equals(Exp r){
+bool Exp::equals(Exp anything){
+        return (getValue() == anything.getValue());
+        
     
-    return true;
+    
+    
 }
+
+// if (r.num == num && r.exp == exp)

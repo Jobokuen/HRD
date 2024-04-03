@@ -1,16 +1,20 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<math.h>
 
-// num_list_len은 배열 num_list의 길이입니다.
-int main(void){
-    int num[1000] = {1,2,3,4,5};
-    int temp[1000] = {0};
-    for (int i = 0; i < 5; i++)
+int main (void){
+    //pow함수
+    int a =0;
+    a =pow(3, 5);
+
+    //반복문 표현
+    int base;
+    int result = 1;
+    for (int i = 0; i < exp; i++)
     {
-        temp[i] = num[4-i];
-        printf("%d\n",temp[i]);
+        result = result * base;
     }
-
+    
+    printf("%d\n",a);
+    printf("%d",result);
     return 0;
 }
