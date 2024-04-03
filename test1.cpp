@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<iostream>
+
 int main(void){
     int count = 0 ;
     scanf("%d",&count);
@@ -6,7 +7,7 @@ int main(void){
     {
         for (int j = count - i; j > 0; j--)
         {
-            printf(" ");
+            
         }
         
         for (int j = 0; j < i+1; j++)
