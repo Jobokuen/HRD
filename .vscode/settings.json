@@ -3,6 +3,8 @@
         "stdio.h": "c",
         "algorithm": "c",
         "*.tcc": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }

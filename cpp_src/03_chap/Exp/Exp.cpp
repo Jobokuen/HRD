@@ -3,24 +3,24 @@ using namespace std;
 
 Exp::Exp(){};
 
-Exp::Exp(int a){
-    num = a , exp = 1;
+Exp::Exp(int base){
+    this->base = base , exp = 1;
 }
 
-Exp::Exp(int a, int b){
-    num = a , exp = b;
+Exp::Exp(int base, int exp){
+    this->base = base , this->exp = exp;
 }
 
 int Exp::getValue(){
     int result;
-    result = pow(num, exp);
+    result = pow(this->base, this->exp);
     return result;
 } 
 int Exp::getBase(){
-    return num;
+    return this->base;
 }
 int Exp::getExp(){
-    return exp;
+    return this->exp;
     
 }
 

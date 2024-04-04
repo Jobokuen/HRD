@@ -5,16 +5,16 @@
 class Exp
 {
 private:
-    int num;
+    int base;
     int exp;
 public:
     Exp();  
-    Exp(int a);
-    Exp(int a, int b);
+    Exp(int base);
+    Exp(int base, int exp);
     int getValue();
     int getBase();
     int getExp();
-    bool equals(Exp r);
+    bool equals(Exp base);
 };
 
 #endif
