@@ -23,7 +23,7 @@ void WordGame::firstWord(char word){
     }
 
 void WordGame::process(){
-    cout << Player name;
+    cout << name;
     char code;
     cin >> code;
 
@@ -48,7 +48,7 @@ private:
     int playerNumber;
     char name;
 public:
-    Player(char name) { this->name = name;};
+    Player(char name) {this->name = name;};
     void inputName();
 };
 
@@ -64,10 +64,10 @@ int main(void){
     game_1.start();
     cin >> count;
 
-    Player *pList = new Player[count];
-    pList[0].inputName();
-    pList[1].inputName();
-    pList[2].inputName();
+    Player List[count] ;
+    List[0].inputName();
+    List[1].inputName();
+    List[2].inputName();
 
     game_1.firstWord('아버지');
     game_1.process();
