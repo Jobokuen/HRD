@@ -75,7 +75,6 @@ Book::~Book()
 
 int main(void){
     Book cpp("명품 C++", "황기태", 10000, 696);
-
     Book java = cpp;
 
     java.set("명품 자바", "홍길동", 12000, 800);
