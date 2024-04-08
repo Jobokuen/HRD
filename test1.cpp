@@ -1,20 +1,6 @@
 #include<iostream>
 using namespace std;
 
-void changeArray(int numArray[], int &count){
-    for (int i = 0; i < count -1; i++)
-    {
-        if (numArray[i] > numArray[i+1])
-        {
-            int temp = numArray[i];
-            
-        }
-        
-    }
-    
-
-}
-
 int main(void){
     int count;
     cin >> count;
@@ -22,10 +8,19 @@ int main(void){
     for (int i = 0; i < count; i++)
     {
         cin >> numList[i];
+        cout << numList[i] << ' ';
     }
-    changeArray(numList, count);
+    cout << endl;
+    // 재배열
+    while(1){
+        
+    }
+    for (int i = 0; i < count; i++)
+    {
+        cout << numList[i] << ' ';
+    }
     
-
-    cout << numList[0] << ' ' << numList[count];
     return 0;
 }
+//5
+//20 10 35 30 7

@@ -9,5 +9,9 @@ int main(void){
     cout << a << ' ' << b << endl;
     cout << *pa << ' ' << *pb << endl;
 
+    pa = pb; // 주소만 복사
+
+    cout << *pa << ' ' << *pb << endl;
+    
     return 0;
-}
+}      
