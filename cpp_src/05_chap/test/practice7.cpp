@@ -35,7 +35,10 @@ bool MyIntStack::pop(int &n){
         tos = 0;
         return false;
     }
-    else return true;
+    else{
+        p[tos+1] = 0;
+        return true;
+    } 
 }
 
 
