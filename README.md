@@ -684,6 +684,7 @@ c/c++ &amp; iot class
       class ClassName{
         ClassName(const ClassName& c);
       };
+    - 디폴트 복사 생성자는 얕은 복사를 실행하도록 만들어진 코드이다.
     
 
 
