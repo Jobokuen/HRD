@@ -19,7 +19,7 @@
                 "$gcc"
             ],
             "group": "build",
-            "detail": "컴파일러: /usr/bin/g++"
+            "detail": "컴파일러: /usr/bin/gcc"
         },
         {
             "type": "cppbuild",

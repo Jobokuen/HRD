@@ -9,35 +9,34 @@ private:
     int size;
     int tos;
 public:
-    MyIntStack();
     MyIntStack(int size);
     MyIntStack(const MyIntStack &c);
-    // ~MyIntStack();
+    ~MyIntStack();
     bool push(int a);
     bool pop(int &n);
     void view();
 };
 
-MyIntStack::MyIntStack()
-{   tos = 0;
-    size = 0;
-}
-
 MyIntStack::MyIntStack(int size){
     this->size = size;
-    p = new int [size];
+    tos = 0;
+    p = new int [size] {0};
+    
 }
 
 MyIntStack::MyIntStack(const MyIntStack &c){
-    this->size = c.size;
-    this->tos = c.tos;
+    size = c.size;
+    tos = c.tos;
     p = new int [c.size];
-    p = c.p;
+    for (int i = 0; i < c.size; i++)
+    {
+        p[i] = c.p[i];
+    }
 }
 
-// MyIntStack::~MyIntStack(){
-//     if(p) {delete [] p;}
-// }
+MyIntStack::~MyIntStack(){
+    if(p) {delete [] p;}
+}
 
 bool MyIntStack::push(int n){
     // p[tos] = n;
@@ -52,14 +51,14 @@ bool MyIntStack::push(int n){
 }
 
 bool MyIntStack::pop(int &n){
-    n = p[tos];
+    n = p[tos-1];
     tos -= 1;
     if(tos < -1){
         tos = 0;
         return false;
     }
     else{
-        p[tos+1] = 0;
+        p[tos] = 0;
         return true;
     } 
 }
@@ -77,20 +76,21 @@ void MyIntStack::view(){
 int main(void){
     MyIntStack a(10);
     a.push(10);
-    a.view();
     a.push(20);
-    a.view();
-
+    // a.view();
     MyIntStack b = a;
-    b.view();
     b.push(30);
-    b.view();
-
+    // a.view();
+    // b.view();
+    
     int n;
     a.pop(n);
     cout << "스택 a에서 팝한 값" << n << endl;
     b.pop(n);
     cout << "스택 b에서 팝한 값" << n << endl;
+    // a.view();
+    // b.view();
     
     return 0;
+    
 }
