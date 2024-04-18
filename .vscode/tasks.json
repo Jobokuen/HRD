@@ -23,8 +23,8 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++-11 활성 파일 빌드",
-            "command": "/usr/bin/g++-11",
+            "label": "C/C++: gcc-11 활성 파일 빌드",
+            "command": "/usr/bin/gcc-11",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
@@ -36,7 +36,7 @@
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
-                "$g++"
+                "$gcc"
             ],
             "group": {
                 "kind": "build",
