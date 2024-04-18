@@ -18,7 +18,7 @@ int main(int argc, char* argv[]){
         printf("Usage : %s <IP> <port>\n", argv[0]);
         exit(1);
     }
-
+// socket 생성
     sock=socket(PF_INET, SOCK_STREAM, 0);
     if(sock == -1)
         error_handling("socket() error");
@@ -27,10 +27,10 @@ int main(int argc, char* argv[]){
     serv_addr.sin_family=AF_INET;
     serv_addr.sin_addr.s_addr=inet_addr(argv[1]);
     serv_addr.sin_port=htons(atoi(argv[2]));
-
+// 연결 요청
     if(connect(sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr))==-1)
         error_handling("connect() error!");
-
+// 데이터 수신
     str_len=read(sock, message, sizeof(message)-1);
     if(str_len==-1)
         error_handling("read() error!");
