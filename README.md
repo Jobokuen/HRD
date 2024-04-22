@@ -767,4 +767,59 @@ c/c++ &amp; iot class
             3. 연결요청 가능상태 변경   listen 함수
             4. 연결요청에 대한 수락     accept 함수
           
+  ## 2024-04-22
+    --- 3장 소켓에 할당되는 IP주소와 Port번호
+      - 인터넷 주소
+        - 4바이트 주소체계인 IPv4와 16바이트 주소체게인 IPv6가 존재한다.
+        - 소켓을 생성할 때 기본적인 프로토콜을 지정해야 한다.
+        - 네트워크주소와 호스트 주소로 나뉜다.
+          - 네트워크 주소를 이용해서 네트워크를 찾고, 호스트 주소를 이용해서 호스트를 구분한다.
+        - 클래스 별 네트워크 주소와 호스트 주소의 경계
+          A클래스 : 0 ~ 127     > 첫 번째 비트는 0으로 시작
+          B클래스 : 128 ~ 191   > 첫 두 비트는 항상 10으로 시작
+          C클래스 : 192 ~ 223   > 첫 세 비트는 항상 110으로 시작
+
+
+      - port번호
+        - ip는 컴퓨터를 구분하기 위한 목적으로 존재한다.
+        - PORT번호는 소캣을 구분하는 용도로 사용된다.
+        - 16비트로 표현(0 ~ 65535)
+
+
+      - 주소정보의 표현
+        - sin_family : 주소체계 > IPv4 : AF_INET
+        - sin_port   : PORT번호 (네트워크 바이트 순서 : 빅엔디언)
+        - sin_addr   : IP주소정보 (네트워크 바이트 순서 : 빅엔디언)
+        host to network long (htonl)
+        host to network short (htons)
+        memset(memory set) : 초기화
+        - sin_zero :
+            struct sockaddr{
+              sa_family_t sin_family;     // 주소체계(Address Family)
+              char        sa_data[14];    // 주소정보
+            }
+          - sa_data[14] : sin_port[2] + sin_addr[4] + sin_zeor[8] // port + IP_address + 0
+
+
+    --- 4장 TCP 기반 서버/클라이언트 1
+      - TCP/IP 프로토콜 스택
+        - 인터넷 기반의 데이터 송수신을 목적으로 설계된 스택
+        - 7계층으로 세분화가 되어있으며, 4계층으로도 표현함
+        - OSI 7 Layer Model -> TCP/IP Protocal (4 Layer)
+        - APPLICATION > Transport > Internet(경로) > Network Interface(LINK Layer)
+
+
+      - TCP/UDP 계층
+        - 실제 데이터의 송수신과 관련 있는 계층
+        - TCP : 연결지향형 소켓(SOCK_STREAM)
+        - UDP : 비연결지향형 소켓(SOCK_DGRAM)
+
+
+      - APPLICATION 계층
+        - 용용프로그램의 프로토콜을 구성하는 계층
+        - 소켓을 기반으로 완성하는 프로토콜을 의미함
+
+
+      - echo lterative server
+
 
