@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/drawing.dir/drawing.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/drawing.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/drawing.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/video.dir/video.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/video.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/video.cpp"
+}
+]

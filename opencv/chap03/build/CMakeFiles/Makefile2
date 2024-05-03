@@ -63,8 +63,14 @@ CMAKE_BINARY_DIR = /home/hrd/hrd/HRD-1/opencv/chap03/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/MatOp.dir/all
+all: CMakeFiles/MatOp2.dir/all
+all: CMakeFiles/MatOp3.dir/all
+all: CMakeFiles/MatOp5.dir/all
 all: CMakeFiles/Rect.dir/all
+all: CMakeFiles/VecOP.dir/all
 all: CMakeFiles/basic.dir/all
+all: CMakeFiles/materx.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,9 +78,119 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/MatOp.dir/clean
+clean: CMakeFiles/MatOp2.dir/clean
+clean: CMakeFiles/MatOp3.dir/clean
+clean: CMakeFiles/MatOp5.dir/clean
 clean: CMakeFiles/Rect.dir/clean
+clean: CMakeFiles/VecOP.dir/clean
 clean: CMakeFiles/basic.dir/clean
+clean: CMakeFiles/materx.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MatOp.dir
+
+# All Build rule for target.
+CMakeFiles/MatOp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=1,2 "Built target MatOp"
+.PHONY : CMakeFiles/MatOp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MatOp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MatOp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/MatOp.dir/rule
+
+# Convenience name for target.
+MatOp: CMakeFiles/MatOp.dir/rule
+.PHONY : MatOp
+
+# clean rule for target.
+CMakeFiles/MatOp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/clean
+.PHONY : CMakeFiles/MatOp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MatOp2.dir
+
+# All Build rule for target.
+CMakeFiles/MatOp2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=3,4 "Built target MatOp2"
+.PHONY : CMakeFiles/MatOp2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MatOp2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MatOp2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/MatOp2.dir/rule
+
+# Convenience name for target.
+MatOp2: CMakeFiles/MatOp2.dir/rule
+.PHONY : MatOp2
+
+# clean rule for target.
+CMakeFiles/MatOp2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/clean
+.PHONY : CMakeFiles/MatOp2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MatOp3.dir
+
+# All Build rule for target.
+CMakeFiles/MatOp3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=5,6 "Built target MatOp3"
+.PHONY : CMakeFiles/MatOp3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MatOp3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MatOp3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/MatOp3.dir/rule
+
+# Convenience name for target.
+MatOp3: CMakeFiles/MatOp3.dir/rule
+.PHONY : MatOp3
+
+# clean rule for target.
+CMakeFiles/MatOp3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/clean
+.PHONY : CMakeFiles/MatOp3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MatOp5.dir
+
+# All Build rule for target.
+CMakeFiles/MatOp5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=7,8 "Built target MatOp5"
+.PHONY : CMakeFiles/MatOp5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MatOp5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MatOp5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/MatOp5.dir/rule
+
+# Convenience name for target.
+MatOp5: CMakeFiles/MatOp5.dir/rule
+.PHONY : MatOp5
+
+# clean rule for target.
+CMakeFiles/MatOp5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/clean
+.PHONY : CMakeFiles/MatOp5.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Rect.dir
@@ -83,7 +199,7 @@ clean: CMakeFiles/basic.dir/clean
 CMakeFiles/Rect.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=1,2 "Built target Rect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=9,10 "Built target Rect"
 .PHONY : CMakeFiles/Rect.dir/all
 
 # Build rule for subdir invocation for target.
@@ -103,13 +219,39 @@ CMakeFiles/Rect.dir/clean:
 .PHONY : CMakeFiles/Rect.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/VecOP.dir
+
+# All Build rule for target.
+CMakeFiles/VecOP.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=11,12 "Built target VecOP"
+.PHONY : CMakeFiles/VecOP.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/VecOP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/VecOP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/VecOP.dir/rule
+
+# Convenience name for target.
+VecOP: CMakeFiles/VecOP.dir/rule
+.PHONY : VecOP
+
+# clean rule for target.
+CMakeFiles/VecOP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/clean
+.PHONY : CMakeFiles/VecOP.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/basic.dir
 
 # All Build rule for target.
 CMakeFiles/basic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=3,4 "Built target basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=13,14 "Built target basic"
 .PHONY : CMakeFiles/basic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +269,32 @@ basic: CMakeFiles/basic.dir/rule
 CMakeFiles/basic.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/clean
 .PHONY : CMakeFiles/basic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/materx.dir
+
+# All Build rule for target.
+CMakeFiles/materx.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles --progress-num=15,16 "Built target materx"
+.PHONY : CMakeFiles/materx.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/materx.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/materx.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap03/build/CMakeFiles 0
+.PHONY : CMakeFiles/materx.dir/rule
+
+# Convenience name for target.
+materx: CMakeFiles/materx.dir/rule
+.PHONY : materx
+
+# clean rule for target.
+CMakeFiles/materx.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/clean
+.PHONY : CMakeFiles/materx.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

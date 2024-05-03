@@ -823,3 +823,71 @@ c/c++ &amp; iot class
       - echo lterative server
 
 
+## 2024-04-22
+    --- OpenCV로 배우는 컴퓨터 비전
+    - 컴퓨터 비전과 영상의 이해
+      - 컴퓨터 비전 : 정지영상 또는 동영상으로부터 의미 있는 정보를 추출하는 방법을 연구하는 학문
+        - 영상의 구조와 표현방법
+          - 양자화, 샘플링
+          - 2차 배열을 통한 표현
+          - 그레이스스케일 영상
+            - 밝기정보를 0 ~ 255 사이의 정수값으로 표현
+          - 컬러영상
+            -  RGB값을 각각 0 ~ 255사이의 정수값으로 표현
+
+    - OpenCV 주요 클라스
+      - Point
+        - 2차원 좌표를 나타냄 (멤버변수 : x , y)
+      - Size
+        - 영상 또는 사각형 영역의 크기를 표현 (멤버변수 : width, hegiht)
+      - Rect
+        - 사격형의 위차와 크기 정보를 표현할 때 사용
+        - 멤버변수 : x, y, width, height
+
+      - Point, Size, Rect 클래스는 클래스객체와의 산술연산자 재정이가 되어 있으며 각각 템플릿으로 정의되어 있다.
+
+      - RotatedRect
+        - 회전된 사각형을 표현하는 클래스
+        - 멤버변수 : center, size, angle
+
+      - Range
+        - 범위 또는 구간을 표현하는 클래스
+        - 멤버변수 : start, end
+
+      - String
+        - OpenCV에서 문자열을 다룰 때, 영상에 문자열을 출력할 때
+        - cv::String
+        - 특징 : std::string 호환가능
+
+      - Mat(중요)
+        - 일반적인 2차원 행렬, 고차원 행렬 표현
+        - 한 개 이상의 체널을 가질 수 있음.
+        - 벡터필드, 포인트 클라우드, 텐서, 히스토그램 등 정보를 저장하는 용도
+
+      - 행렬의 생성과 초기화
+        - 행렬의 생성
+          - Mat::Mat(int rows, int cols, int type)
+            - rows : 행 개수
+            - cols : 열 개수
+            - type : 새로만들 행렬의 타입(ex. CV_8UC1, CV_8UC3)
+          - Mat::Mat(Size size, int type)
+            - size : 새로만들 행렬의 크기(Size(cols, rows) or Size(width,hegiht))
+
+          - Mat::Mat(int rows, int cols, int type, const Salar& s);
+          - Mat::Mat(Size size, int type, const Salar& s);
+            - const Salar& s : 행렬 원소 초기값.
+
+        - 행렬의 초기화
+          - static MatExpr Mat::zeros(int rows, int cols, int type);
+          - static MatExpr Mat::zeros(Size size, int type);
+            - Mat::zero는 0으로 초기화한 행렬을 생성
+            - 유사 : Mat::ones / Mat::eye
+
+        - 외부 메모리 공간의 주소
+          - Mat::Mat(int rows, int cols, int type, void* data, size_t step=AUTO_STEP);
+            - data : 사용할(외부) 행렬 데이터의 주소, 외부 데이터를 사용하여 Mat객체를 생성할 경우, 생성자에서 원소 데이터 저장을 위한 메모리 공간을 동적으로 할당하지 않습니다.
+            - step : (외부) 행렬 데이터에서 한 행이 차지하는 바이트 수.
+
+            - Mat 객체의 원소 값과 외부메모리 공가느이 데이터 값이 상호 공유됨
+
+    - OpenCV 주요 기능

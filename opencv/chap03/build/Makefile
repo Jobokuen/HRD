@@ -117,6 +117,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MatOp
+
+# Build rule for target.
+MatOp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MatOp
+.PHONY : MatOp
+
+# fast build rule for target.
+MatOp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/build
+.PHONY : MatOp/fast
+
+#=============================================================================
+# Target rules for targets named MatOp2
+
+# Build rule for target.
+MatOp2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MatOp2
+.PHONY : MatOp2
+
+# fast build rule for target.
+MatOp2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/build
+.PHONY : MatOp2/fast
+
+#=============================================================================
+# Target rules for targets named MatOp3
+
+# Build rule for target.
+MatOp3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MatOp3
+.PHONY : MatOp3
+
+# fast build rule for target.
+MatOp3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/build
+.PHONY : MatOp3/fast
+
+#=============================================================================
+# Target rules for targets named MatOp5
+
+# Build rule for target.
+MatOp5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MatOp5
+.PHONY : MatOp5
+
+# fast build rule for target.
+MatOp5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/build
+.PHONY : MatOp5/fast
+
+#=============================================================================
 # Target rules for targets named Rect
 
 # Build rule for target.
@@ -130,6 +182,19 @@ Rect/fast:
 .PHONY : Rect/fast
 
 #=============================================================================
+# Target rules for targets named VecOP
+
+# Build rule for target.
+VecOP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VecOP
+.PHONY : VecOP
+
+# fast build rule for target.
+VecOP/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/build
+.PHONY : VecOP/fast
+
+#=============================================================================
 # Target rules for targets named basic
 
 # Build rule for target.
@@ -141,6 +206,115 @@ basic: cmake_check_build_system
 basic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/build
 .PHONY : basic/fast
+
+#=============================================================================
+# Target rules for targets named materx
+
+# Build rule for target.
+materx: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 materx
+.PHONY : materx
+
+# fast build rule for target.
+materx/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/build
+.PHONY : materx/fast
+
+MatOp.o: MatOp.cpp.o
+.PHONY : MatOp.o
+
+# target to build an object file
+MatOp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/MatOp.cpp.o
+.PHONY : MatOp.cpp.o
+
+MatOp.i: MatOp.cpp.i
+.PHONY : MatOp.i
+
+# target to preprocess a source file
+MatOp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/MatOp.cpp.i
+.PHONY : MatOp.cpp.i
+
+MatOp.s: MatOp.cpp.s
+.PHONY : MatOp.s
+
+# target to generate assembly for a file
+MatOp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp.dir/build.make CMakeFiles/MatOp.dir/MatOp.cpp.s
+.PHONY : MatOp.cpp.s
+
+MatOp2.o: MatOp2.cpp.o
+.PHONY : MatOp2.o
+
+# target to build an object file
+MatOp2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/MatOp2.cpp.o
+.PHONY : MatOp2.cpp.o
+
+MatOp2.i: MatOp2.cpp.i
+.PHONY : MatOp2.i
+
+# target to preprocess a source file
+MatOp2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/MatOp2.cpp.i
+.PHONY : MatOp2.cpp.i
+
+MatOp2.s: MatOp2.cpp.s
+.PHONY : MatOp2.s
+
+# target to generate assembly for a file
+MatOp2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp2.dir/build.make CMakeFiles/MatOp2.dir/MatOp2.cpp.s
+.PHONY : MatOp2.cpp.s
+
+MatOp3.o: MatOp3.cpp.o
+.PHONY : MatOp3.o
+
+# target to build an object file
+MatOp3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/MatOp3.cpp.o
+.PHONY : MatOp3.cpp.o
+
+MatOp3.i: MatOp3.cpp.i
+.PHONY : MatOp3.i
+
+# target to preprocess a source file
+MatOp3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/MatOp3.cpp.i
+.PHONY : MatOp3.cpp.i
+
+MatOp3.s: MatOp3.cpp.s
+.PHONY : MatOp3.s
+
+# target to generate assembly for a file
+MatOp3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp3.dir/build.make CMakeFiles/MatOp3.dir/MatOp3.cpp.s
+.PHONY : MatOp3.cpp.s
+
+MatOp5.o: MatOp5.cpp.o
+.PHONY : MatOp5.o
+
+# target to build an object file
+MatOp5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/MatOp5.cpp.o
+.PHONY : MatOp5.cpp.o
+
+MatOp5.i: MatOp5.cpp.i
+.PHONY : MatOp5.i
+
+# target to preprocess a source file
+MatOp5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/MatOp5.cpp.i
+.PHONY : MatOp5.cpp.i
+
+MatOp5.s: MatOp5.cpp.s
+.PHONY : MatOp5.s
+
+# target to generate assembly for a file
+MatOp5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MatOp5.dir/build.make CMakeFiles/MatOp5.dir/MatOp5.cpp.s
+.PHONY : MatOp5.cpp.s
 
 Rect.o: Rect.cpp.o
 .PHONY : Rect.o
@@ -166,6 +340,30 @@ Rect.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rect.dir/build.make CMakeFiles/Rect.dir/Rect.cpp.s
 .PHONY : Rect.cpp.s
 
+VecOP.o: VecOP.cpp.o
+.PHONY : VecOP.o
+
+# target to build an object file
+VecOP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/VecOP.cpp.o
+.PHONY : VecOP.cpp.o
+
+VecOP.i: VecOP.cpp.i
+.PHONY : VecOP.i
+
+# target to preprocess a source file
+VecOP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/VecOP.cpp.i
+.PHONY : VecOP.cpp.i
+
+VecOP.s: VecOP.cpp.s
+.PHONY : VecOP.s
+
+# target to generate assembly for a file
+VecOP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VecOP.dir/build.make CMakeFiles/VecOP.dir/VecOP.cpp.s
+.PHONY : VecOP.cpp.s
+
 basic.o: basic.cpp.o
 .PHONY : basic.o
 
@@ -190,6 +388,30 @@ basic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic.dir/build.make CMakeFiles/basic.dir/basic.cpp.s
 .PHONY : basic.cpp.s
 
+materx.o: materx.cpp.o
+.PHONY : materx.o
+
+# target to build an object file
+materx.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/materx.cpp.o
+.PHONY : materx.cpp.o
+
+materx.i: materx.cpp.i
+.PHONY : materx.i
+
+# target to preprocess a source file
+materx.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/materx.cpp.i
+.PHONY : materx.cpp.i
+
+materx.s: materx.cpp.s
+.PHONY : materx.s
+
+# target to generate assembly for a file
+materx.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/materx.dir/build.make CMakeFiles/materx.dir/materx.cpp.s
+.PHONY : materx.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,14 +420,38 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MatOp"
+	@echo "... MatOp2"
+	@echo "... MatOp3"
+	@echo "... MatOp5"
 	@echo "... Rect"
+	@echo "... VecOP"
 	@echo "... basic"
+	@echo "... materx"
+	@echo "... MatOp.o"
+	@echo "... MatOp.i"
+	@echo "... MatOp.s"
+	@echo "... MatOp2.o"
+	@echo "... MatOp2.i"
+	@echo "... MatOp2.s"
+	@echo "... MatOp3.o"
+	@echo "... MatOp3.i"
+	@echo "... MatOp3.s"
+	@echo "... MatOp5.o"
+	@echo "... MatOp5.i"
+	@echo "... MatOp5.s"
 	@echo "... Rect.o"
 	@echo "... Rect.i"
 	@echo "... Rect.s"
+	@echo "... VecOP.o"
+	@echo "... VecOP.i"
+	@echo "... VecOP.s"
 	@echo "... basic.o"
 	@echo "... basic.i"
 	@echo "... basic.s"
+	@echo "... materx.o"
+	@echo "... materx.i"
+	@echo "... materx.s"
 .PHONY : help
 
 

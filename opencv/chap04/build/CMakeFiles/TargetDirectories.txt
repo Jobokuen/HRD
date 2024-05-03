@@ -1,0 +1,4 @@
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/drawing.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/video.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/rebuild_cache.dir
