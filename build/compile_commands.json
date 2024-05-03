@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/basic.dir/basic.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/basic.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/basic.cpp"
+}
+]

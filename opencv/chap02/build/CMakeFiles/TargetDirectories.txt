@@ -1,0 +1,3 @@
+/home/hrd/hrd/HRD-1/opencv/chap02/build/CMakeFiles/helloworld.dir
+/home/hrd/hrd/HRD-1/opencv/chap02/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap02/build/CMakeFiles/rebuild_cache.dir
