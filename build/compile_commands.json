@@ -1,7 +1,42 @@
 [
 {
   "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/MatOp.dir/MatOp.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/MatOp.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/MatOp.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/MatOp2.dir/MatOp2.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/MatOp2.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/MatOp2.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/MatOp3.dir/MatOp3.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/MatOp3.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/MatOp3.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/MatOp5.dir/MatOp5.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/MatOp5.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/MatOp5.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/Rect.dir/Rect.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/Rect.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/Rect.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/VecOP.dir/VecOP.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/VecOP.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/VecOP.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
   "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/basic.dir/basic.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/basic.cpp",
   "file": "/home/hrd/hrd/HRD-1/opencv/chap03/basic.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/build",
+  "command": "/usr/bin/g++  -isystem /usr/include/opencv4 -g -o CMakeFiles/materx.dir/materx.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap03/materx.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap03/materx.cpp"
 }
 ]

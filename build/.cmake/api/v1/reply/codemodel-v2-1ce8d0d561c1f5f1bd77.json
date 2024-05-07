@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "basic",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MatOp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatOp-Debug-fc64b243f68e99ed0db5.json",
+					"name" : "MatOp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatOp2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatOp2-Debug-9e1d6ef35b3a0c0db619.json",
+					"name" : "MatOp2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatOp3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatOp3-Debug-634e2abe9f0d4b1b0556.json",
+					"name" : "MatOp3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MatOp5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MatOp5-Debug-cf4714750c11cd14d1e1.json",
+					"name" : "MatOp5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Rect::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Rect-Debug-c53962bc7f7601bc9cc7.json",
+					"name" : "Rect",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VecOP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VecOP-Debug-d5c6141cbf9f73b6d8df.json",
+					"name" : "VecOP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "basic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-basic-Debug-0f4c98956bacb1bd4ec4.json",
+					"name" : "basic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "materx::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-materx-Debug-7663ba2bf3763557b71e.json",
+					"name" : "materx",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hrd/hrd/HRD-1/build",
+		"source" : "/home/hrd/hrd/HRD-1/opencv/chap03"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
