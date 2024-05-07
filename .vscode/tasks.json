@@ -6,7 +6,6 @@
             "command": "rm",
             "args": [
                 "-rf",
-                // "${workspaceFolder}/build",
                 "${fileDirname}/build",
             ],
             "group": "build"
@@ -18,7 +17,6 @@
             "args": [
                 "-p",
                 "${fileDirname}/build"
-                // "${workspaceFolder}/build"
             ],
             "group": "build",
             "dependsOn": ["디렉토리 내용 삭제"]
@@ -38,7 +36,6 @@
             ],
             "options": {
                 "cwd": "${fileDirname}/build",
-                // "cwd": "${workspaceFolder}/build",
             },
             "group": "build",
             "dependsOn": ["디렉토리 생성"]
@@ -58,7 +55,6 @@
                 "$gcc"
             ],
             "options": {
-                // "cwd": "${workspaceFolder}/build",
                 "cwd": "${fileDirname}/build",
             },
             "dependsOn": [

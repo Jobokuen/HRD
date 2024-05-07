@@ -1,0 +1,4 @@
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/bright01.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/bright02.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/rebuild_cache.dir

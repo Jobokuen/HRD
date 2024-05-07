@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named drawPolic
+
+# Build rule for target.
+drawPolic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drawPolic
+.PHONY : drawPolic
+
+# fast build rule for target.
+drawPolic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolic.dir/build.make CMakeFiles/drawPolic.dir/build
+.PHONY : drawPolic/fast
+
+#=============================================================================
 # Target rules for targets named drawing
 
 # Build rule for target.
@@ -130,6 +143,162 @@ drawing/fast:
 .PHONY : drawing/fast
 
 #=============================================================================
+# Target rules for targets named drawtext
+
+# Build rule for target.
+drawtext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drawtext
+.PHONY : drawtext
+
+# fast build rule for target.
+drawtext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawtext.dir/build.make CMakeFiles/drawtext.dir/build
+.PHONY : drawtext/fast
+
+#=============================================================================
+# Target rules for targets named fileStorge
+
+# Build rule for target.
+fileStorge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fileStorge
+.PHONY : fileStorge
+
+# fast build rule for target.
+fileStorge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorge.dir/build.make CMakeFiles/fileStorge.dir/build
+.PHONY : fileStorge/fast
+
+#=============================================================================
+# Target rules for targets named fileStorgeRead
+
+# Build rule for target.
+fileStorgeRead: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fileStorgeRead
+.PHONY : fileStorgeRead
+
+# fast build rule for target.
+fileStorgeRead/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorgeRead.dir/build.make CMakeFiles/fileStorgeRead.dir/build
+.PHONY : fileStorgeRead/fast
+
+#=============================================================================
+# Target rules for targets named freetypeFont
+
+# Build rule for target.
+freetypeFont: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freetypeFont
+.PHONY : freetypeFont
+
+# fast build rule for target.
+freetypeFont/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freetypeFont.dir/build.make CMakeFiles/freetypeFont.dir/build
+.PHONY : freetypeFont/fast
+
+#=============================================================================
+# Target rules for targets named keyboard
+
+# Build rule for target.
+keyboard: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyboard
+.PHONY : keyboard
+
+# fast build rule for target.
+keyboard/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/build
+.PHONY : keyboard/fast
+
+#=============================================================================
+# Target rules for targets named keyboard2
+
+# Build rule for target.
+keyboard2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyboard2
+.PHONY : keyboard2
+
+# fast build rule for target.
+keyboard2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/build
+.PHONY : keyboard2/fast
+
+#=============================================================================
+# Target rules for targets named lineTest
+
+# Build rule for target.
+lineTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lineTest
+.PHONY : lineTest
+
+# fast build rule for target.
+lineTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/build
+.PHONY : lineTest/fast
+
+#=============================================================================
+# Target rules for targets named maskset
+
+# Build rule for target.
+maskset: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 maskset
+.PHONY : maskset
+
+# fast build rule for target.
+maskset/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskset.dir/build.make CMakeFiles/maskset.dir/build
+.PHONY : maskset/fast
+
+#=============================================================================
+# Target rules for targets named mouse
+
+# Build rule for target.
+mouse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mouse
+.PHONY : mouse
+
+# fast build rule for target.
+mouse/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/build
+.PHONY : mouse/fast
+
+#=============================================================================
+# Target rules for targets named mouseRGBPointer
+
+# Build rule for target.
+mouseRGBPointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mouseRGBPointer
+.PHONY : mouseRGBPointer
+
+# fast build rule for target.
+mouseRGBPointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBPointer.dir/build.make CMakeFiles/mouseRGBPointer.dir/build
+.PHONY : mouseRGBPointer/fast
+
+#=============================================================================
+# Target rules for targets named trackbar
+
+# Build rule for target.
+trackbar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trackbar
+.PHONY : trackbar
+
+# fast build rule for target.
+trackbar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar.dir/build.make CMakeFiles/trackbar.dir/build
+.PHONY : trackbar/fast
+
+#=============================================================================
+# Target rules for targets named usefulFuntion
+
+# Build rule for target.
+usefulFuntion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 usefulFuntion
+.PHONY : usefulFuntion
+
+# fast build rule for target.
+usefulFuntion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFuntion.dir/build.make CMakeFiles/usefulFuntion.dir/build
+.PHONY : usefulFuntion/fast
+
+#=============================================================================
 # Target rules for targets named video
 
 # Build rule for target.
@@ -141,6 +310,30 @@ video: cmake_check_build_system
 video/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
 .PHONY : video/fast
+
+drawPolic.o: drawPolic.cpp.o
+.PHONY : drawPolic.o
+
+# target to build an object file
+drawPolic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolic.dir/build.make CMakeFiles/drawPolic.dir/drawPolic.cpp.o
+.PHONY : drawPolic.cpp.o
+
+drawPolic.i: drawPolic.cpp.i
+.PHONY : drawPolic.i
+
+# target to preprocess a source file
+drawPolic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolic.dir/build.make CMakeFiles/drawPolic.dir/drawPolic.cpp.i
+.PHONY : drawPolic.cpp.i
+
+drawPolic.s: drawPolic.cpp.s
+.PHONY : drawPolic.s
+
+# target to generate assembly for a file
+drawPolic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawPolic.dir/build.make CMakeFiles/drawPolic.dir/drawPolic.cpp.s
+.PHONY : drawPolic.cpp.s
 
 drawing.o: drawing.cpp.o
 .PHONY : drawing.o
@@ -165,6 +358,294 @@ drawing.s: drawing.cpp.s
 drawing.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawing.dir/build.make CMakeFiles/drawing.dir/drawing.cpp.s
 .PHONY : drawing.cpp.s
+
+drawtext.o: drawtext.cpp.o
+.PHONY : drawtext.o
+
+# target to build an object file
+drawtext.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawtext.dir/build.make CMakeFiles/drawtext.dir/drawtext.cpp.o
+.PHONY : drawtext.cpp.o
+
+drawtext.i: drawtext.cpp.i
+.PHONY : drawtext.i
+
+# target to preprocess a source file
+drawtext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawtext.dir/build.make CMakeFiles/drawtext.dir/drawtext.cpp.i
+.PHONY : drawtext.cpp.i
+
+drawtext.s: drawtext.cpp.s
+.PHONY : drawtext.s
+
+# target to generate assembly for a file
+drawtext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drawtext.dir/build.make CMakeFiles/drawtext.dir/drawtext.cpp.s
+.PHONY : drawtext.cpp.s
+
+fileStorge.o: fileStorge.cpp.o
+.PHONY : fileStorge.o
+
+# target to build an object file
+fileStorge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorge.dir/build.make CMakeFiles/fileStorge.dir/fileStorge.cpp.o
+.PHONY : fileStorge.cpp.o
+
+fileStorge.i: fileStorge.cpp.i
+.PHONY : fileStorge.i
+
+# target to preprocess a source file
+fileStorge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorge.dir/build.make CMakeFiles/fileStorge.dir/fileStorge.cpp.i
+.PHONY : fileStorge.cpp.i
+
+fileStorge.s: fileStorge.cpp.s
+.PHONY : fileStorge.s
+
+# target to generate assembly for a file
+fileStorge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorge.dir/build.make CMakeFiles/fileStorge.dir/fileStorge.cpp.s
+.PHONY : fileStorge.cpp.s
+
+fileStorgeRead.o: fileStorgeRead.cpp.o
+.PHONY : fileStorgeRead.o
+
+# target to build an object file
+fileStorgeRead.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorgeRead.dir/build.make CMakeFiles/fileStorgeRead.dir/fileStorgeRead.cpp.o
+.PHONY : fileStorgeRead.cpp.o
+
+fileStorgeRead.i: fileStorgeRead.cpp.i
+.PHONY : fileStorgeRead.i
+
+# target to preprocess a source file
+fileStorgeRead.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorgeRead.dir/build.make CMakeFiles/fileStorgeRead.dir/fileStorgeRead.cpp.i
+.PHONY : fileStorgeRead.cpp.i
+
+fileStorgeRead.s: fileStorgeRead.cpp.s
+.PHONY : fileStorgeRead.s
+
+# target to generate assembly for a file
+fileStorgeRead.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileStorgeRead.dir/build.make CMakeFiles/fileStorgeRead.dir/fileStorgeRead.cpp.s
+.PHONY : fileStorgeRead.cpp.s
+
+freetypeFont.o: freetypeFont.cpp.o
+.PHONY : freetypeFont.o
+
+# target to build an object file
+freetypeFont.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freetypeFont.dir/build.make CMakeFiles/freetypeFont.dir/freetypeFont.cpp.o
+.PHONY : freetypeFont.cpp.o
+
+freetypeFont.i: freetypeFont.cpp.i
+.PHONY : freetypeFont.i
+
+# target to preprocess a source file
+freetypeFont.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freetypeFont.dir/build.make CMakeFiles/freetypeFont.dir/freetypeFont.cpp.i
+.PHONY : freetypeFont.cpp.i
+
+freetypeFont.s: freetypeFont.cpp.s
+.PHONY : freetypeFont.s
+
+# target to generate assembly for a file
+freetypeFont.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/freetypeFont.dir/build.make CMakeFiles/freetypeFont.dir/freetypeFont.cpp.s
+.PHONY : freetypeFont.cpp.s
+
+keyboard.o: keyboard.cpp.o
+.PHONY : keyboard.o
+
+# target to build an object file
+keyboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/keyboard.cpp.o
+.PHONY : keyboard.cpp.o
+
+keyboard.i: keyboard.cpp.i
+.PHONY : keyboard.i
+
+# target to preprocess a source file
+keyboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/keyboard.cpp.i
+.PHONY : keyboard.cpp.i
+
+keyboard.s: keyboard.cpp.s
+.PHONY : keyboard.s
+
+# target to generate assembly for a file
+keyboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard.dir/build.make CMakeFiles/keyboard.dir/keyboard.cpp.s
+.PHONY : keyboard.cpp.s
+
+keyboard2.o: keyboard2.cpp.o
+.PHONY : keyboard2.o
+
+# target to build an object file
+keyboard2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/keyboard2.cpp.o
+.PHONY : keyboard2.cpp.o
+
+keyboard2.i: keyboard2.cpp.i
+.PHONY : keyboard2.i
+
+# target to preprocess a source file
+keyboard2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/keyboard2.cpp.i
+.PHONY : keyboard2.cpp.i
+
+keyboard2.s: keyboard2.cpp.s
+.PHONY : keyboard2.s
+
+# target to generate assembly for a file
+keyboard2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard2.dir/build.make CMakeFiles/keyboard2.dir/keyboard2.cpp.s
+.PHONY : keyboard2.cpp.s
+
+lineTest.o: lineTest.cpp.o
+.PHONY : lineTest.o
+
+# target to build an object file
+lineTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/lineTest.cpp.o
+.PHONY : lineTest.cpp.o
+
+lineTest.i: lineTest.cpp.i
+.PHONY : lineTest.i
+
+# target to preprocess a source file
+lineTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/lineTest.cpp.i
+.PHONY : lineTest.cpp.i
+
+lineTest.s: lineTest.cpp.s
+.PHONY : lineTest.s
+
+# target to generate assembly for a file
+lineTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineTest.dir/build.make CMakeFiles/lineTest.dir/lineTest.cpp.s
+.PHONY : lineTest.cpp.s
+
+maskset..o: maskset..cpp.o
+.PHONY : maskset..o
+
+# target to build an object file
+maskset..cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskset.dir/build.make CMakeFiles/maskset.dir/maskset..cpp.o
+.PHONY : maskset..cpp.o
+
+maskset..i: maskset..cpp.i
+.PHONY : maskset..i
+
+# target to preprocess a source file
+maskset..cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskset.dir/build.make CMakeFiles/maskset.dir/maskset..cpp.i
+.PHONY : maskset..cpp.i
+
+maskset..s: maskset..cpp.s
+.PHONY : maskset..s
+
+# target to generate assembly for a file
+maskset..cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/maskset.dir/build.make CMakeFiles/maskset.dir/maskset..cpp.s
+.PHONY : maskset..cpp.s
+
+mouse.o: mouse.cpp.o
+.PHONY : mouse.o
+
+# target to build an object file
+mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.cpp.o
+.PHONY : mouse.cpp.o
+
+mouse.i: mouse.cpp.i
+.PHONY : mouse.i
+
+# target to preprocess a source file
+mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.cpp.i
+.PHONY : mouse.cpp.i
+
+mouse.s: mouse.cpp.s
+.PHONY : mouse.s
+
+# target to generate assembly for a file
+mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse.dir/build.make CMakeFiles/mouse.dir/mouse.cpp.s
+.PHONY : mouse.cpp.s
+
+mouseRGBPointer.o: mouseRGBPointer.cpp.o
+.PHONY : mouseRGBPointer.o
+
+# target to build an object file
+mouseRGBPointer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBPointer.dir/build.make CMakeFiles/mouseRGBPointer.dir/mouseRGBPointer.cpp.o
+.PHONY : mouseRGBPointer.cpp.o
+
+mouseRGBPointer.i: mouseRGBPointer.cpp.i
+.PHONY : mouseRGBPointer.i
+
+# target to preprocess a source file
+mouseRGBPointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBPointer.dir/build.make CMakeFiles/mouseRGBPointer.dir/mouseRGBPointer.cpp.i
+.PHONY : mouseRGBPointer.cpp.i
+
+mouseRGBPointer.s: mouseRGBPointer.cpp.s
+.PHONY : mouseRGBPointer.s
+
+# target to generate assembly for a file
+mouseRGBPointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouseRGBPointer.dir/build.make CMakeFiles/mouseRGBPointer.dir/mouseRGBPointer.cpp.s
+.PHONY : mouseRGBPointer.cpp.s
+
+trackbar.o: trackbar.cpp.o
+.PHONY : trackbar.o
+
+# target to build an object file
+trackbar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar.dir/build.make CMakeFiles/trackbar.dir/trackbar.cpp.o
+.PHONY : trackbar.cpp.o
+
+trackbar.i: trackbar.cpp.i
+.PHONY : trackbar.i
+
+# target to preprocess a source file
+trackbar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar.dir/build.make CMakeFiles/trackbar.dir/trackbar.cpp.i
+.PHONY : trackbar.cpp.i
+
+trackbar.s: trackbar.cpp.s
+.PHONY : trackbar.s
+
+# target to generate assembly for a file
+trackbar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar.dir/build.make CMakeFiles/trackbar.dir/trackbar.cpp.s
+.PHONY : trackbar.cpp.s
+
+usefulFuntion.o: usefulFuntion.cpp.o
+.PHONY : usefulFuntion.o
+
+# target to build an object file
+usefulFuntion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFuntion.dir/build.make CMakeFiles/usefulFuntion.dir/usefulFuntion.cpp.o
+.PHONY : usefulFuntion.cpp.o
+
+usefulFuntion.i: usefulFuntion.cpp.i
+.PHONY : usefulFuntion.i
+
+# target to preprocess a source file
+usefulFuntion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFuntion.dir/build.make CMakeFiles/usefulFuntion.dir/usefulFuntion.cpp.i
+.PHONY : usefulFuntion.cpp.i
+
+usefulFuntion.s: usefulFuntion.cpp.s
+.PHONY : usefulFuntion.s
+
+# target to generate assembly for a file
+usefulFuntion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usefulFuntion.dir/build.make CMakeFiles/usefulFuntion.dir/usefulFuntion.cpp.s
+.PHONY : usefulFuntion.cpp.s
 
 video.o: video.cpp.o
 .PHONY : video.o
@@ -198,11 +679,63 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... drawPolic"
 	@echo "... drawing"
+	@echo "... drawtext"
+	@echo "... fileStorge"
+	@echo "... fileStorgeRead"
+	@echo "... freetypeFont"
+	@echo "... keyboard"
+	@echo "... keyboard2"
+	@echo "... lineTest"
+	@echo "... maskset"
+	@echo "... mouse"
+	@echo "... mouseRGBPointer"
+	@echo "... trackbar"
+	@echo "... usefulFuntion"
 	@echo "... video"
+	@echo "... drawPolic.o"
+	@echo "... drawPolic.i"
+	@echo "... drawPolic.s"
 	@echo "... drawing.o"
 	@echo "... drawing.i"
 	@echo "... drawing.s"
+	@echo "... drawtext.o"
+	@echo "... drawtext.i"
+	@echo "... drawtext.s"
+	@echo "... fileStorge.o"
+	@echo "... fileStorge.i"
+	@echo "... fileStorge.s"
+	@echo "... fileStorgeRead.o"
+	@echo "... fileStorgeRead.i"
+	@echo "... fileStorgeRead.s"
+	@echo "... freetypeFont.o"
+	@echo "... freetypeFont.i"
+	@echo "... freetypeFont.s"
+	@echo "... keyboard.o"
+	@echo "... keyboard.i"
+	@echo "... keyboard.s"
+	@echo "... keyboard2.o"
+	@echo "... keyboard2.i"
+	@echo "... keyboard2.s"
+	@echo "... lineTest.o"
+	@echo "... lineTest.i"
+	@echo "... lineTest.s"
+	@echo "... maskset..o"
+	@echo "... maskset..i"
+	@echo "... maskset..s"
+	@echo "... mouse.o"
+	@echo "... mouse.i"
+	@echo "... mouse.s"
+	@echo "... mouseRGBPointer.o"
+	@echo "... mouseRGBPointer.i"
+	@echo "... mouseRGBPointer.s"
+	@echo "... trackbar.o"
+	@echo "... trackbar.i"
+	@echo "... trackbar.s"
+	@echo "... usefulFuntion.o"
+	@echo "... usefulFuntion.i"
+	@echo "... usefulFuntion.s"
 	@echo "... video.o"
 	@echo "... video.i"
 	@echo "... video.s"

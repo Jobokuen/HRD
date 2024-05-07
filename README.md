@@ -865,13 +865,14 @@ c/c++ &amp; iot class
         - 벡터필드, 포인트 클라우드, 텐서, 히스토그램 등 정보를 저장하는 용도
 
       - 행렬의 생성과 초기화
-        - 행렬의 생성
-          - Mat::Mat(int rows, int cols, int type)
-            - rows : 행 개수
-            - cols : 열 개수
-            - type : 새로만들 행렬의 타입(ex. CV_8UC1, CV_8UC3)
-          - Mat::Mat(Size size, int type)
-            - size : 새로만들 행렬의 크기(Size(cols, rows) or Size(width,hegiht))
+      
+    - 직선그리기
+      - line, arrowedLine, drawMarker
+    - 도형 그리기
+      - 사각형 : rectangle
+      - 원 : circle
+      - 타원 : ellipse
+    - 문자열 출력하기렬의 크기(Size(cols, rows) or Size(width,hegiht))
 
           - Mat::Mat(int rows, int cols, int type, const Salar& s);
           - Mat::Mat(Size size, int type, const Salar& s);
@@ -894,4 +895,55 @@ c/c++ &amp; iot class
 
 
 ## 2024-05-07
-    --- OpenCV로 배우는 컴퓨터 비전
+  --- chapter 4
+    - 직선그리기
+      - line, arrowedLine, drawMarker
+    - 도형 그리기
+      - 사각형 : rectangle
+      - 원 : circle
+      - 타원 : ellipse
+    - 문자열 출력하기
+      - putText()
+        - 영어만 인식됨. UTF-8을 지원하지 않아서, 한글이 안됨
+      - freetypeFont : 한글 사용 가능
+    - keyboard 이벤트 처리
+      - waitykey()
+        - 특수키는 입력받을 수 없다.
+        - 대기시간으로는 동작시간을 조절하기 힘들다.
+        - 밀리초 단위의 시간을 대기하면서 키의 asc값을 반환
+    - Mouse 이벤트 처리
+      -setMouseCallback()
+        - 마우스 콜백 처리
+    - 트랙바 사용하기
+      - createTrackbar()
+        - gui에 추가하는 대표적인 코드
+
+    - 4.4 OpenCV 데이터 파일 입출력
+      - FileStorage 클래스
+        - 데이터 파일 입출력
+        - OpenCV에서 사용하는 데이터의 파입 입출력 기능을 캡술화하여 지원하는 클래스
+        - Mat, Scalar, Point, Size, Rect
+        - char, int, float, double, string, vector 저장
+
+      - 구조화가 잘되어 있어 중복적으로 코드를 생성할 수 있다.
+    
+    --- chapter 5 
+      - 그레이스케일
+        - 컬러 환경에서 속도를 높이고자 할 때 그레이스케일로 변환하여 코딩하기도 함.
+        - cvtColor()
+      - 영상의 밝기 조절
+        - 영상의 전체적인 밝기를 조절(0~255)
+        - 수식 : dst(x,y) = src(x,y) + n
+        - 주의점 : 포화연산
+          - 포화연산을 포함하지 않을경우 최대값인 255을 넘어 이상한 값으로 표현될 수 있다.
+          - saturate_cast 변수를 사용하여 조절할 수 있다.
+
+
+      - 영상의 명암비 조절
+        - 명암비란 영상에서 밝은 영역과 어두운 영역 사이에 드러나는 밝기 차이의 강도
+        - 전체적인 기울기를 변화 시킨다.
+        - 수식 : dst(x,y)=saturate(s*src(x,y))
+
+      - 히스토그램 분석
+        - 영상의 픽셀 값 분포를 그래프 형태로 표현
+        - calcHist()

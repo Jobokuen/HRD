@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/bright01.dir/bright01.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/bright01.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/bright01.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/bright02.dir/bright02.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/bright02.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/bright02.cpp"
+}
+]

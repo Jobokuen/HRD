@@ -1,4 +1,17 @@
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/drawPolic.dir
 /home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/drawing.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/drawtext.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/fileStorge.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/fileStorgeRead.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/freetypeFont.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/keyboard.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/keyboard2.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/lineTest.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/maskset.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/mouse.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/mouseRGBPointer.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/trackbar.dir
+/home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/usefulFuntion.dir
 /home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/video.dir
 /home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/edit_cache.dir
 /home/hrd/hrd/HRD-1/opencv/chap04/build/CMakeFiles/rebuild_cache.dir

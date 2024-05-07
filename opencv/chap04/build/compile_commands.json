@@ -1,8 +1,73 @@
 [
 {
   "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/drawPolic.dir/drawPolic.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/drawPolic.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/drawPolic.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
   "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/drawing.dir/drawing.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/drawing.cpp",
   "file": "/home/hrd/hrd/HRD-1/opencv/chap04/drawing.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/drawtext.dir/drawtext.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/drawtext.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/drawtext.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/fileStorge.dir/fileStorge.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/fileStorge.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/fileStorge.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/fileStorgeRead.dir/fileStorgeRead.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/fileStorgeRead.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/fileStorgeRead.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/freetypeFont.dir/freetypeFont.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/freetypeFont.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/freetypeFont.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/keyboard.dir/keyboard.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/keyboard.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/keyboard.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/keyboard2.dir/keyboard2.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/keyboard2.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/keyboard2.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/lineTest.dir/lineTest.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/lineTest.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/lineTest.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/maskset.dir/maskset..cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/maskset..cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/maskset..cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/mouse.dir/mouse.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/mouse.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/mouse.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/mouseRGBPointer.dir/mouseRGBPointer.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/mouseRGBPointer.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/mouseRGBPointer.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/trackbar.dir/trackbar.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/trackbar.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/trackbar.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/usefulFuntion.dir/usefulFuntion.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap04/usefulFuntion.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap04/usefulFuntion.cpp"
 },
 {
   "directory": "/home/hrd/hrd/HRD-1/opencv/chap04/build",
