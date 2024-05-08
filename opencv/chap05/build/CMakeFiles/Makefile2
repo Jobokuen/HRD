@@ -65,6 +65,11 @@ CMAKE_BINARY_DIR = /home/hrd/hrd/HRD-1/opencv/chap05/build
 # The main recursive "all" target.
 all: CMakeFiles/bright01.dir/all
 all: CMakeFiles/bright02.dir/all
+all: CMakeFiles/brightness.dir/all
+all: CMakeFiles/contrast.dir/all
+all: CMakeFiles/histogram.dir/all
+all: CMakeFiles/histogramEqual.dir/all
+all: CMakeFiles/histogram_freshman.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +79,11 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/bright01.dir/clean
 clean: CMakeFiles/bright02.dir/clean
+clean: CMakeFiles/brightness.dir/clean
+clean: CMakeFiles/contrast.dir/clean
+clean: CMakeFiles/histogram.dir/clean
+clean: CMakeFiles/histogramEqual.dir/clean
+clean: CMakeFiles/histogram_freshman.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +137,136 @@ bright02: CMakeFiles/bright02.dir/rule
 CMakeFiles/bright02.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bright02.dir/build.make CMakeFiles/bright02.dir/clean
 .PHONY : CMakeFiles/bright02.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/brightness.dir
+
+# All Build rule for target.
+CMakeFiles/brightness.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles --progress-num=5,6 "Built target brightness"
+.PHONY : CMakeFiles/brightness.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/brightness.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/brightness.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/brightness.dir/rule
+
+# Convenience name for target.
+brightness: CMakeFiles/brightness.dir/rule
+.PHONY : brightness
+
+# clean rule for target.
+CMakeFiles/brightness.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/clean
+.PHONY : CMakeFiles/brightness.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/contrast.dir
+
+# All Build rule for target.
+CMakeFiles/contrast.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles --progress-num=7,8 "Built target contrast"
+.PHONY : CMakeFiles/contrast.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/contrast.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/contrast.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/contrast.dir/rule
+
+# Convenience name for target.
+contrast: CMakeFiles/contrast.dir/rule
+.PHONY : contrast
+
+# clean rule for target.
+CMakeFiles/contrast.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/clean
+.PHONY : CMakeFiles/contrast.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogram.dir
+
+# All Build rule for target.
+CMakeFiles/histogram.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles --progress-num=9,10 "Built target histogram"
+.PHONY : CMakeFiles/histogram.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogram.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogram.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogram.dir/rule
+
+# Convenience name for target.
+histogram: CMakeFiles/histogram.dir/rule
+.PHONY : histogram
+
+# clean rule for target.
+CMakeFiles/histogram.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/clean
+.PHONY : CMakeFiles/histogram.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogramEqual.dir
+
+# All Build rule for target.
+CMakeFiles/histogramEqual.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles --progress-num=11,12 "Built target histogramEqual"
+.PHONY : CMakeFiles/histogramEqual.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogramEqual.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogramEqual.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogramEqual.dir/rule
+
+# Convenience name for target.
+histogramEqual: CMakeFiles/histogramEqual.dir/rule
+.PHONY : histogramEqual
+
+# clean rule for target.
+CMakeFiles/histogramEqual.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/clean
+.PHONY : CMakeFiles/histogramEqual.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/histogram_freshman.dir
+
+# All Build rule for target.
+CMakeFiles/histogram_freshman.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles --progress-num=13,14 "Built target histogram_freshman"
+.PHONY : CMakeFiles/histogram_freshman.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/histogram_freshman.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogram_freshman.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles 0
+.PHONY : CMakeFiles/histogram_freshman.dir/rule
+
+# Convenience name for target.
+histogram_freshman: CMakeFiles/histogram_freshman.dir/rule
+.PHONY : histogram_freshman
+
+# clean rule for target.
+CMakeFiles/histogram_freshman.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/clean
+.PHONY : CMakeFiles/histogram_freshman.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

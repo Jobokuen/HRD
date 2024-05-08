@@ -8,5 +8,30 @@
   "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
   "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/bright02.dir/bright02.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/bright02.cpp",
   "file": "/home/hrd/hrd/HRD-1/opencv/chap05/bright02.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/brightness.dir/brightness.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/brightness.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/brightness.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/contrast.dir/contrast.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/contrast.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/contrast.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/histogram.dir/histogram.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/histogram.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/histogram.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/histogramEqual.dir/histogramEqual.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/histogramEqual.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/histogramEqual.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap05/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/histogram_freshman.dir/histogram_freshman.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap05/histogram_freshman.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap05/histogram_freshman.cpp"
 }
 ]

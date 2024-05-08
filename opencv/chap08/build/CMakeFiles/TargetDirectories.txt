@@ -1,0 +1,6 @@
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/affine.dir
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/affine_resize.dir
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/affine_shear.dir
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/affine_shift.dir
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap08/build/CMakeFiles/rebuild_cache.dir

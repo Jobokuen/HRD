@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap06/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/arithmetic.dir/arithmetic.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap06/arithmetic.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap06/arithmetic.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap06/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/logical.dir/logical.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap06/logical.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap06/logical.cpp"
+}
+]

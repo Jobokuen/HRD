@@ -142,6 +142,71 @@ bright02/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bright02.dir/build.make CMakeFiles/bright02.dir/build
 .PHONY : bright02/fast
 
+#=============================================================================
+# Target rules for targets named brightness
+
+# Build rule for target.
+brightness: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 brightness
+.PHONY : brightness
+
+# fast build rule for target.
+brightness/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/build
+.PHONY : brightness/fast
+
+#=============================================================================
+# Target rules for targets named contrast
+
+# Build rule for target.
+contrast: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 contrast
+.PHONY : contrast
+
+# fast build rule for target.
+contrast/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/build
+.PHONY : contrast/fast
+
+#=============================================================================
+# Target rules for targets named histogram
+
+# Build rule for target.
+histogram: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogram
+.PHONY : histogram
+
+# fast build rule for target.
+histogram/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/build
+.PHONY : histogram/fast
+
+#=============================================================================
+# Target rules for targets named histogramEqual
+
+# Build rule for target.
+histogramEqual: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogramEqual
+.PHONY : histogramEqual
+
+# fast build rule for target.
+histogramEqual/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/build
+.PHONY : histogramEqual/fast
+
+#=============================================================================
+# Target rules for targets named histogram_freshman
+
+# Build rule for target.
+histogram_freshman: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 histogram_freshman
+.PHONY : histogram_freshman
+
+# fast build rule for target.
+histogram_freshman/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/build
+.PHONY : histogram_freshman/fast
+
 bright01.o: bright01.cpp.o
 .PHONY : bright01.o
 
@@ -190,6 +255,126 @@ bright02.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bright02.dir/build.make CMakeFiles/bright02.dir/bright02.cpp.s
 .PHONY : bright02.cpp.s
 
+brightness.o: brightness.cpp.o
+.PHONY : brightness.o
+
+# target to build an object file
+brightness.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/brightness.cpp.o
+.PHONY : brightness.cpp.o
+
+brightness.i: brightness.cpp.i
+.PHONY : brightness.i
+
+# target to preprocess a source file
+brightness.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/brightness.cpp.i
+.PHONY : brightness.cpp.i
+
+brightness.s: brightness.cpp.s
+.PHONY : brightness.s
+
+# target to generate assembly for a file
+brightness.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/brightness.dir/build.make CMakeFiles/brightness.dir/brightness.cpp.s
+.PHONY : brightness.cpp.s
+
+contrast.o: contrast.cpp.o
+.PHONY : contrast.o
+
+# target to build an object file
+contrast.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.o
+.PHONY : contrast.cpp.o
+
+contrast.i: contrast.cpp.i
+.PHONY : contrast.i
+
+# target to preprocess a source file
+contrast.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.i
+.PHONY : contrast.cpp.i
+
+contrast.s: contrast.cpp.s
+.PHONY : contrast.s
+
+# target to generate assembly for a file
+contrast.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contrast.dir/build.make CMakeFiles/contrast.dir/contrast.cpp.s
+.PHONY : contrast.cpp.s
+
+histogram.o: histogram.cpp.o
+.PHONY : histogram.o
+
+# target to build an object file
+histogram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.o
+.PHONY : histogram.cpp.o
+
+histogram.i: histogram.cpp.i
+.PHONY : histogram.i
+
+# target to preprocess a source file
+histogram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.i
+.PHONY : histogram.cpp.i
+
+histogram.s: histogram.cpp.s
+.PHONY : histogram.s
+
+# target to generate assembly for a file
+histogram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram.dir/build.make CMakeFiles/histogram.dir/histogram.cpp.s
+.PHONY : histogram.cpp.s
+
+histogramEqual.o: histogramEqual.cpp.o
+.PHONY : histogramEqual.o
+
+# target to build an object file
+histogramEqual.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/histogramEqual.cpp.o
+.PHONY : histogramEqual.cpp.o
+
+histogramEqual.i: histogramEqual.cpp.i
+.PHONY : histogramEqual.i
+
+# target to preprocess a source file
+histogramEqual.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/histogramEqual.cpp.i
+.PHONY : histogramEqual.cpp.i
+
+histogramEqual.s: histogramEqual.cpp.s
+.PHONY : histogramEqual.s
+
+# target to generate assembly for a file
+histogramEqual.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogramEqual.dir/build.make CMakeFiles/histogramEqual.dir/histogramEqual.cpp.s
+.PHONY : histogramEqual.cpp.s
+
+histogram_freshman.o: histogram_freshman.cpp.o
+.PHONY : histogram_freshman.o
+
+# target to build an object file
+histogram_freshman.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/histogram_freshman.cpp.o
+.PHONY : histogram_freshman.cpp.o
+
+histogram_freshman.i: histogram_freshman.cpp.i
+.PHONY : histogram_freshman.i
+
+# target to preprocess a source file
+histogram_freshman.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/histogram_freshman.cpp.i
+.PHONY : histogram_freshman.cpp.i
+
+histogram_freshman.s: histogram_freshman.cpp.s
+.PHONY : histogram_freshman.s
+
+# target to generate assembly for a file
+histogram_freshman.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_freshman.dir/build.make CMakeFiles/histogram_freshman.dir/histogram_freshman.cpp.s
+.PHONY : histogram_freshman.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +385,32 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bright01"
 	@echo "... bright02"
+	@echo "... brightness"
+	@echo "... contrast"
+	@echo "... histogram"
+	@echo "... histogramEqual"
+	@echo "... histogram_freshman"
 	@echo "... bright01.o"
 	@echo "... bright01.i"
 	@echo "... bright01.s"
 	@echo "... bright02.o"
 	@echo "... bright02.i"
 	@echo "... bright02.s"
+	@echo "... brightness.o"
+	@echo "... brightness.i"
+	@echo "... brightness.s"
+	@echo "... contrast.o"
+	@echo "... contrast.i"
+	@echo "... contrast.s"
+	@echo "... histogram.o"
+	@echo "... histogram.i"
+	@echo "... histogram.s"
+	@echo "... histogramEqual.o"
+	@echo "... histogramEqual.i"
+	@echo "... histogramEqual.s"
+	@echo "... histogram_freshman.o"
+	@echo "... histogram_freshman.i"
+	@echo "... histogram_freshman.s"
 .PHONY : help
 
 

@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/blurring.dir/blurring.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/blurring.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/blurring.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/filter.dir/filter.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/filter.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/filter.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/gaussianBlurring.dir/gaussianBlurring.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/gaussianBlurring.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/gaussianBlurring.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/noise.dir/noise.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/noise.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/noise.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/noise_bilateralFilter.dir/noise_bilateralFilter.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/noise_bilateralFilter.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/noise_bilateralFilter.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/noise_medianBlur.dir/noise_medianBlur.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/noise_medianBlur.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/noise_medianBlur.cpp"
+},
+{
+  "directory": "/home/hrd/hrd/HRD-1/opencv/chap07/build",
+  "command": "/usr/bin/c++  -isystem /usr/include/opencv4 -g -o CMakeFiles/sharpen.dir/sharpen.cpp.o -c /home/hrd/hrd/HRD-1/opencv/chap07/sharpen.cpp",
+  "file": "/home/hrd/hrd/HRD-1/opencv/chap07/sharpen.cpp"
+}
+]

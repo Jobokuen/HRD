@@ -51,4 +51,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/bright01.dir/DependInfo.cmake"
   "CMakeFiles/bright02.dir/DependInfo.cmake"
+  "CMakeFiles/brightness.dir/DependInfo.cmake"
+  "CMakeFiles/contrast.dir/DependInfo.cmake"
+  "CMakeFiles/histogram.dir/DependInfo.cmake"
+  "CMakeFiles/histogramEqual.dir/DependInfo.cmake"
+  "CMakeFiles/histogram_freshman.dir/DependInfo.cmake"
   )

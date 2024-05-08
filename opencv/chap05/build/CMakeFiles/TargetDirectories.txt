@@ -1,4 +1,9 @@
 /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/bright01.dir
 /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/bright02.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/brightness.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/contrast.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/histogram.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/histogramEqual.dir
+/home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/histogram_freshman.dir
 /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/edit_cache.dir
 /home/hrd/hrd/HRD-1/opencv/chap05/build/CMakeFiles/rebuild_cache.dir

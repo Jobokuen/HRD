@@ -1,0 +1,4 @@
+/home/hrd/hrd/HRD-1/opencv/chap06/build/CMakeFiles/arithmetic.dir
+/home/hrd/hrd/HRD-1/opencv/chap06/build/CMakeFiles/logical.dir
+/home/hrd/hrd/HRD-1/opencv/chap06/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap06/build/CMakeFiles/rebuild_cache.dir
