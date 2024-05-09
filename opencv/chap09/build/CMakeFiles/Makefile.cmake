@@ -51,4 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/edges.dir/DependInfo.cmake"
   "CMakeFiles/edges_canny.dir/DependInfo.cmake"
+  "CMakeFiles/hough_lines.dir/DependInfo.cmake"
   )

@@ -142,6 +142,19 @@ edges_canny/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/edges_canny.dir/build.make CMakeFiles/edges_canny.dir/build
 .PHONY : edges_canny/fast
 
+#=============================================================================
+# Target rules for targets named hough_lines
+
+# Build rule for target.
+hough_lines: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hough_lines
+.PHONY : hough_lines
+
+# fast build rule for target.
+hough_lines/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/build
+.PHONY : hough_lines/fast
+
 edges.o: edges.cpp.o
 .PHONY : edges.o
 
@@ -190,6 +203,30 @@ edges_canny.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/edges_canny.dir/build.make CMakeFiles/edges_canny.dir/edges_canny.cpp.s
 .PHONY : edges_canny.cpp.s
 
+hough_lines.o: hough_lines.cpp.o
+.PHONY : hough_lines.o
+
+# target to build an object file
+hough_lines.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/hough_lines.cpp.o
+.PHONY : hough_lines.cpp.o
+
+hough_lines.i: hough_lines.cpp.i
+.PHONY : hough_lines.i
+
+# target to preprocess a source file
+hough_lines.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/hough_lines.cpp.i
+.PHONY : hough_lines.cpp.i
+
+hough_lines.s: hough_lines.cpp.s
+.PHONY : hough_lines.s
+
+# target to generate assembly for a file
+hough_lines.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/hough_lines.cpp.s
+.PHONY : hough_lines.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edges"
 	@echo "... edges_canny"
+	@echo "... hough_lines"
 	@echo "... edges.o"
 	@echo "... edges.i"
 	@echo "... edges.s"
 	@echo "... edges_canny.o"
 	@echo "... edges_canny.i"
 	@echo "... edges_canny.s"
+	@echo "... hough_lines.o"
+	@echo "... hough_lines.i"
+	@echo "... hough_lines.s"
 .PHONY : help
 
 

@@ -1,0 +1,6 @@
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/contours_basic.dir
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/contours_hier.dir
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/labeling_basic.dir
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/labeling_stats.dir
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/edit_cache.dir
+/home/hrd/hrd/HRD-1/opencv/chap12/build/CMakeFiles/rebuild_cache.dir

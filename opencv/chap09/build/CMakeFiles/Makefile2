@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/hrd/hrd/HRD-1/opencv/chap09/build
 # The main recursive "all" target.
 all: CMakeFiles/edges.dir/all
 all: CMakeFiles/edges_canny.dir/all
+all: CMakeFiles/hough_lines.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/edges.dir/clean
 clean: CMakeFiles/edges_canny.dir/clean
+clean: CMakeFiles/hough_lines.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -127,6 +129,32 @@ edges_canny: CMakeFiles/edges_canny.dir/rule
 CMakeFiles/edges_canny.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/edges_canny.dir/build.make CMakeFiles/edges_canny.dir/clean
 .PHONY : CMakeFiles/edges_canny.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hough_lines.dir
+
+# All Build rule for target.
+CMakeFiles/hough_lines.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hrd/hrd/HRD-1/opencv/chap09/build/CMakeFiles --progress-num=5,6 "Built target hough_lines"
+.PHONY : CMakeFiles/hough_lines.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hough_lines.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap09/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hough_lines.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hrd/hrd/HRD-1/opencv/chap09/build/CMakeFiles 0
+.PHONY : CMakeFiles/hough_lines.dir/rule
+
+# Convenience name for target.
+hough_lines: CMakeFiles/hough_lines.dir/rule
+.PHONY : hough_lines
+
+# clean rule for target.
+CMakeFiles/hough_lines.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hough_lines.dir/build.make CMakeFiles/hough_lines.dir/clean
+.PHONY : CMakeFiles/hough_lines.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
