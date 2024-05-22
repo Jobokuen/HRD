@@ -1121,5 +1121,7 @@ def main():
     - return값을 가지고 있으므로 본 데이터는 변하지 않는다.
     - len,upper,title,join etc..
 
-- 문자열 서식 지정
+- 문자열 서식 지정(formant)
   - fstring
+  - 패딩(%,format()) : 간격을 맞추는 용도
+  
