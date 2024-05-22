@@ -1090,5 +1090,10 @@ print("x는 y보다 큽니다.") if x>y else print("x가 y보다 작거나 같�
       - positional argument
     - 디폴트 인수 : 
     -  가 변 인수 : *arg
-    - 키워드 가변인수 : dictionary type 을 활용
-      - 키워드 가변인수는 가변 인수보다 뒤에 있어야 한다.
+      - 매개변수의 개수를 정하지 않아야 할 때
+      - tople형으로 반환
+    - 키워드 가변인수 : dictionary type으로 반환
+      - 매개변수의 이름을 따로 지정하지 않고 입력하는 방법
+      - items()를 사용해서 dictionalry내용을 확인하기도 함
+    
+    - 키워드 가변인수는 가변 인수보다 뒤에 있어야 한다.
