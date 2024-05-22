@@ -1072,16 +1072,23 @@ c/c++ &amp; iot class
     - 데이터가 빈칸이거나 아무것도 없을 때 거짓으로 본다.
 
   ## 2024-05-21
-    - 조건문
-      - else if >> elif
+  - 조건문
+    - else if >> elif
 
-    - 반복문
-      - print > end >> defalt "\n"
-      - range(start,end,step)
-      - ' " 차이가 없다(str)
-      - enumerate
+  - 반복문
+    - print > end >> defalt "\n"
+    - range(start,end,step)
+    - ' " 차이가 없다(str)
+    - enumerate
 for i, student in enumerate(student_average):
-  -   
-      - 3항 연산자
+  -  반복문 3항 연산자 
 print("x는 y보다 큽니다.") if x>y else print("x가 y보다 작거나 같습니다.")
 
+  - 함수
+    - 함수의 인수 : C/C++ 과 다른점이 많음
+    - 키워드 인수 : 함수의 인터페티스에서 지정한 변수명을 사용하여 함수의 인수를 지정하는 방법
+      - positional argument
+    - 디폴트 인수 : 
+    -  가 변 인수 : *arg
+    - 키워드 가변인수 : dictionary type 을 활용
+      - 키워드 가변인수는 가변 인수보다 뒤에 있어야 한다.
