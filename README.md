@@ -1041,10 +1041,12 @@ c/c++ &amp; iot class
   - 프로젝트 간 의존성 관리
   - 프로젝트 격리, 패키지 테스트 및 개발, 배포 등
 
-  - def > tab이아닌 space 4이므로 다른 에디터 활용할 때 주의
-  - 기본자료형이 없으며 모두 class로 이루어져 있다.(int, float, string 등)
 
-  - object : 모든 자료형이 달라도 구동을 하게 되어있다 따라서 모든 class의 기본인 object부모 클래스를 사용한다.
+  - def > tab이아닌 space 4이므로 다른 에디터 활용할 때 주의
+  - 변수 : 모두 클래스의 객체이다
+    - 기본자료형이 없으며 모두 class로 이루어져 있다.(int, float, string 등)
+
+  - object class : 모든 자료형이 달라도 구동을 하게 되어있다 따라서 모든 class는 object부모 클래스를 사용한다.
   
   - operation
     - // or / 차이
@@ -1052,10 +1054,12 @@ c/c++ &amp; iot class
     - 증감 연산자(++ / --)가 없다. > ++a(X),  a += 1(O)
 
   - 화면 입출력
-    - input는 str로 한다.
+    - input함수는 str를 리턴한다.
+    - f-string을 사용한다.
     - print함수안에 첫 시작을 f를 사용하여 활용할 수 있다.
+    - 예외처리 (try, except)
 
-  - 리스트
+  - 리스트(비슷: C++ STL(vector))
     - 값이 아닌 메모리 주소로 접근한다.
     - 리스트 연산이 가능하다
     - 리스트 요소를 빼고 더할 수 있다.
@@ -1067,6 +1071,17 @@ c/c++ &amp; iot class
     - int나 float에대하여 0-False 나머지-True
     - 데이터가 빈칸이거나 아무것도 없을 때 거짓으로 본다.
 
-  
+  ## 2024-05-21
+    - 조건문
+      - else if >> elif
 
-  
+    - 반복문
+      - print > end >> defalt "\n"
+      - range(start,end,step)
+      - ' " 차이가 없다(str)
+      - enumerate
+for i, student in enumerate(student_average):
+  -   
+      - 3항 연산자
+print("x는 y보다 큽니다.") if x>y else print("x가 y보다 작거나 같습니다.")
+
