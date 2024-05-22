@@ -824,7 +824,7 @@ c/c++ &amp; iot class
 
 
 ## 2024-05-03
-    --- OpenCV로 배우는 컴퓨터 비전
+  - OpenCV로 배우는 컴퓨터 비전
     - 컴퓨터 비전과 영상의 이해
       - 컴퓨터 비전 : 정지영상 또는 동영상으로부터 의미 있는 정보를 추출하는 방법을 연구하는 학문
         - 영상의 구조와 표현방법
@@ -895,7 +895,7 @@ c/c++ &amp; iot class
 
 
 ## 2024-05-07
-  --- chapter 4
+  - chapter 4
     - 직선그리기
       - line, arrowedLine, drawMarker
     - 도형 그리기
@@ -1097,3 +1097,29 @@ print("x는 y보다 큽니다.") if x>y else print("x가 y보다 작거나 같�
       - items()를 사용해서 dictionalry내용을 확인하기도 함
     
     - 키워드 가변인수는 가변 인수보다 뒤에 있어야 한다.
+
+- 람다(lamda)
+  - 함수를 정의를 하지 않고 정의한 것 처럼 사용함
+def call_ten_times(func):
+    for i in range(10):
+        func()
+
+def main():
+    call_ten_times(lambda: print("hello"))
+  - map(), fiter
+
+- 제너레이터
+  - 이터레이터를 직접 만들 때 사용하는 코드
+  - 함수 내부에서 yield키워드 사용하면 해당 함수는 제너레티어 함수 됨
+  - 일반 함수와 달리 호출해도 함수 내부 코드가 실행되지 않음
+
+- String
+  - indexing
+  - slicing
+  - operator
+  - method
+    - return값을 가지고 있으므로 본 데이터는 변하지 않는다.
+    - len,upper,title,join etc..
+
+- 문자열 서식 지정
+  - fstring
