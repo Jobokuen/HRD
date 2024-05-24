@@ -1125,3 +1125,26 @@ def main():
   - fstring
   - 패딩(%,format()) : 간격을 맞추는 용도
   
+  ## 2024-05-24
+
+  - 예외처리
+    - try-except
+    - try-except-else
+    - try-except -finally
+    - raise
+    - assert
+
+  - 파일 다루기
+    - 파일 읽기
+    - 파일 쓰기
+
+  - pickle 모듈
+    - 
+
+- Chapter 13 CSV와 로그관리
+  - CSV(Comma Separate Values)
+  - 테이블 데이터라고 하는 엑셀 형태의 데이터를 텍스트 형태로 다루는 형식
+  - csv 객체 이용하기
+  - pandas 이용
+
+  - log 관리
