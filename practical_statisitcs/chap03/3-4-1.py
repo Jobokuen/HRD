@@ -19,8 +19,8 @@ def main():
     print(f"Observed difference: {obs_pct_diff}")
     conversion = [0] * 45945
     conversion.extend([1] * 382)
-    conversion_series = pd.Series(conversion)
-    perm_diffs = [100 * perm_func(conversion_series, 23739, 22588) for _ in range(1000)]
+    conversion = pd.Series(conversion)
+    perm_diffs = [100 * perm_func(conversion, 23739, 22588) for _ in range(1000)]
     
     fig, ax = plt.subplots(figsize= (5,5))
     ax.hist(perm_diffs, bins=11, rwidth=0.9, density=True)
