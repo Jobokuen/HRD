@@ -25,7 +25,7 @@ def main():
             'residue' : house[outcome] - house_lm.predict(house[predictors])
         })
         .groupby('ZipCode')
-        .apply(lambda x: {
+        .apply(lambda x: {     
             'ZipCode': x['ZipCode'].iloc[0],
             'count': len(x),
             'median_residual': x['residue'].median(),
