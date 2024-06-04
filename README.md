@@ -1243,3 +1243,16 @@ def main():
     - 임의 표본 추출 원칙 지키기
     - 분산합 평균을 표준화를 해야지 비교하기 쉽다.
     - 다양한 분포도에 대해서 공부
+
+
+## 2024-06-04
+
+  - Google Colab 사용
+    - Colab을 사용한 파일 저장 참조.
+  
+  - sklearn 라이브러리 모음
+  from sklearn.ensemble         import RandomForestClassifier
+  from sklearn.metrics          import accuracy_score
+  from sklearn.model_selection  import train_test_split
+  from sklearn.preprocessing    import StandardScaler
+
