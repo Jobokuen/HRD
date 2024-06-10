@@ -37,6 +37,3 @@ df.dropna(thresh=5) # : 만약 다섯 개 이상의 데이터가 있어야 한�
 print(df. fillna(0))
 print(df["preTestScore"].fillna(df["preTestScore"].mean()))
 print(df)
-
-# print(df.groupby('sex').transform("mean"))
-

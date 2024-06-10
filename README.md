@@ -1269,8 +1269,35 @@ def main():
   - 결측치 비율 : isnull() :값에 대해서 불 인덱싱처럼 널인지 아닌지 확인
 
   - 드롭 : 의미없는 데이터 삭제
-    - dropna() : 하나라도 nan데이터 있을경우 삭제_자체를 변환하지는 않은다(inplace=False)
-    - df_cleaned() : nan데이터가 전체일 경우 삭제
+    - dropna()
+    df.dropna()
+    df.dropna(axis=0, inplace=True, thresh=1, how=all)
+      - axis:
+      - inplace:
+      - thrsh:
+      - how: defalt=any,
+
 
   - 채우기 : nan데이터 채우기
   - fillna
+
+  - 범주형 데이터 처리하기
+    - 원핫인코딩 : 범주형 데이터의 개수만큼 가변수를 생성하여 존재 유무를 True 혹은 False로 표현하는 기법이다.
+      - get_dummies
+      pd.get_dummies(edges, dtype=int)
+      - 실제 edges변수는 변화가 없고 출력값만 생성
+
+    - 바인딩
+      - 기존 연속형 데이터를 범주형 데이터로 변환하여 처리해야 할 때
+      - pd.cut사용
+      bins = [0, 25, 50, 75, 100]
+      pd.cut(raw_data['postTestScore'],bins)
+
+    - 피쳐 스케일링 : 데이터의 크기 맞추기
+      - 최소값과 최댓값을 정규화하는 방법
+      scaling = (df["A"] - df["A"].min()) / (df["A"].max() - df["A"].min())
+      
+      - z-스코어 정규화(평균값과 표준편차)
+      z_score_scaling = (df["B"] - df["B"].mean()) / df["B"].std()
+
+
