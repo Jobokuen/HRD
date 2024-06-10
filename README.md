@@ -1269,4 +1269,8 @@ def main():
   - 결측치 비율 : isnull() :값에 대해서 불 인덱싱처럼 널인지 아닌지 확인
 
   - 드롭 : 의미없는 데이터 삭제
-    - dropna()
+    - dropna() : 하나라도 nan데이터 있을경우 삭제_자체를 변환하지는 않은다(inplace=False)
+    - df_cleaned() : nan데이터가 전체일 경우 삭제
+
+  - 채우기 : nan데이터 채우기
+  - fillna
