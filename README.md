@@ -1256,3 +1256,17 @@ def main():
   from sklearn.model_selection  import train_test_split
   from sklearn.preprocessing    import StandardScaler
 
+
+## 2024-06-10
+  - 데이터 전처리에 기초
+    - 데이터 전처리에 품질문제
+    1. 데이터 분포의 지나친 차이
+    2. 기수형 데이터와 서수형 데이터
+    3. 결측치
+    4. 이상치
+
+  - 결측치 처리하기 : 드롭과 채우기(python/machineLearning/chap06/data_preprocessing.py)
+  - 결측치 비율 : isnull() :값에 대해서 불 인덱싱처럼 널인지 아닌지 확인
+
+  - 드롭 : 의미없는 데이터 삭제
+    - dropna()

@@ -5,7 +5,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import prince
-from     adjustText import adjust_text
+from    adjustText import adjust_text
 
 
 
