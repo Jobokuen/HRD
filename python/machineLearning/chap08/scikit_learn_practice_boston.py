@@ -10,6 +10,10 @@ from sklearn.model_selection import train_test_split
 
 from sklearn import linear_model
 
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+
 # 데이터 확보
 folder = "/home/hrd/Desktop/HRD/data/csv/"
 df = pd.read_csv(folder + "boston.csv")
@@ -41,5 +45,52 @@ lasso_regr.fit(X_train, y_train)
 ridge_regr.fit(X_train, y_train)
 SGD_regr.fit(X_train, y_train)
 
-print(f"Linear Coefficients:{regr.coef_}")
+
+# 예측하기와 결과 분석하기
+modelnames = ["Linear", "Lasso", "Ridge", "SGD"]
+models = []
+models.append(regr)
+models.append(lasso_regr)
+models.append(ridge_regr)
+models.append(SGD_regr)
+
+regr.fit(X_train, y_train)
+lasso_regr.fit(X_train, y_train)
+ridge_regr.fit(X_train, y_train)
+SGD_regr.fit(X_train, y_train)
+
+for m, modelName in zip(models, modelnames):
+    print(f"{modelName} Coefficients:{m.coef_}")
+print("-------------------------")
+for m, modelName in zip(models, modelnames):
+    print(f"{modelName} Intercept:{m.intercept_}")
+
+print(regr.predict(x_data[:5]))
+print(x_data[:5].dot(regr.coef_.T) + regr.intercept_)
+
+y_true = y_test.copy()
+y_hats = []
+for m in models:
+    y_hats.append(m.predict(X_test))
+for y_hat, modelName in zip(y_hats, modelnames):
+    print(f"{modelName} R2 Score:{r2_score(y_true, y_hat)}")
+    print(f"{modelName} MSE:{mean_squared_error(y_true, y_hat)}")
+    print(f"{modelName} RMSE:{np.sqrt(mean_squared_error(y_true, y_hat))}")
+    print(f"{modelName} MAE:{mean_absolute_error(y_true, y_hat)}")
+
+
+# 2 x 2 plot 출력
+fig = plt.figure()
+axes = []
+axes.append(fig.add_subplot(221))
+axes.append(fig.add_subplot(222))
+axes.append(fig.add_subplot(223))
+axes.append(fig.add_subplot(224))
+for i, y_hat in enumerate(y_hats):
+    axes[i].scatter(y_true, y_hat, s=10)
+    axes[i].plot([y_true.min(), y_true.max()], [y_true.min(), y_true.max()], 'k--', lw=2)
+plt.xlabel("Prices: $Y_i$")
+plt.ylabel("Predicted prices: $\hat{Y}_i$")
+plt.title("Prices vs Predicted prices: $Y_i$ vs $\hat{Y}_i$")
+plt.show()
 
