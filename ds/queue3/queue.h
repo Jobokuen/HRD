@@ -1,11 +1,11 @@
-#ifdef STACK_H
+#ifndef STACK_H
 #define STACK_H
-#define ARRAYSIZE 100
 
 struct stack
 {
-    int array[ARRAYSIZE];
-    int tos;
+	int queue[100];
+	int rear;
+	int front;
 };
 
 void push(struct stack *ps, int data);
