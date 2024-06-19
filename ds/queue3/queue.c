@@ -17,6 +17,6 @@ int pop(struct stack *ps){
 
 void initstack(struct stack *ps){
 	ps->rear = 0;
-	ps->front = 0;
+	ps->front = 0;	
 }
 
