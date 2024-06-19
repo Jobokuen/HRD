@@ -3,7 +3,7 @@
 #include <assert.h>
 #include "list.h"
 
- void initList(List *pList){
+static void initList(List *pList){
  	pList->ptr = malloc(sizeof(Node));
  	assert(pList->ptr);
 // 	pList->ptr-> data = ???;		// dummy
@@ -66,7 +66,8 @@
  	Node *p = pList->ptr->next;
  	printf("[");
  	while(p){
- 		printf("%d, ", p->data);
+ 		printf("%d", p->data);
+ 		printf((p->next) ? ", " : "");
  		p = p->next;
  	}
  	printf("]\n");
