@@ -1370,7 +1370,26 @@ def main():
     - ROC 커브와 AUC를 사이킷런 코드로 구현하기
 
 
-## 2024-06-12
+## 2024-06-28
+  - SmartMirror
+    - raspberryPi 5 : SmartMirror Main_MCU
+      - 데이터 수신
+        - wifi(socket program) : raspberry zero 2w X 2
+      - 데이터 송신
+        - cloud 데이터 송신
+    - raspberry Zero 2W : 온도, 습도 데이터 수집
+    - raspberry Zero 2W : LED 출력
+
+  - MagicMirror
+    - .js 파일 라이브러리
+    - 자바스크립트 언어로 구동
+    - c++ 및 c언어로 구동되게 변환
+    - micor python or python 구동되게 변환 
+
+  - DHT22
+    - 온도 및 습도 확인(raspberryPi 5)
+    - 데이터 수신 작업 필요(소켓)
+
 
 
 
